@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+.gl-container{
+    padding: 0 2rem;
+
+    @media screen and (max-width:768px) {
+        padding: 0 1rem;
+    }
+}
+
+
+
+// Components
+
+@import "components/catalog-products";
+
+@import "components/catalog-filter";

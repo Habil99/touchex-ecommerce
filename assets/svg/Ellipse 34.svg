@@ -1,0 +1,22 @@
+<svg width="161" height="144" viewBox="0 0 161 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b)">
+<ellipse rx="122" ry="122" transform="matrix(-4.37114e-08 1 1 4.37114e-08 39 122)" fill="url(#paint0_radial)" fill-opacity="0.2"/>
+<path d="M39 243C105.826 243 160 188.826 160 122C160 55.1736 105.826 1.00001 39 1.00001C-27.8265 1 -82 55.1735 -82 122C-82 188.826 -27.8265 243 39 243Z" stroke="url(#paint1_linear)" stroke-opacity="0.3" stroke-width="2"/>
+</g>
+<defs>
+<filter id="filter0_b" x="-203" y="-120" width="484" height="484" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="60"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(122 122) rotate(90) scale(122)">
+<stop stop-color="white" stop-opacity="0.21"/>
+<stop offset="1" stop-color="#D8F8FF"/>
+</radialGradient>
+<linearGradient id="paint1_linear" x1="4.52518" y1="238.333" x2="-24.1252" y2="74.3019" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
