@@ -8,6 +8,17 @@
     .catalog-products{
         padding-top: 8rem;
         position: relative;
+
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+
+            @media screen and (max-width: 1350px) {
+                grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            }
+        }
+
         &__title{
             font-size: 4rem;
             font-style: normal;

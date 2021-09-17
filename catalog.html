@@ -2,365 +2,384 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./style/css/main.css" />
-    <script src="js/min/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="./style/css/main.css" />
+  <link rel="stylesheet" href="./style/css/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./style/css/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/css/range-slider.css">
+
+  <script src="./js/min/jquery.min.js"></script>
 </head>
 
 <body>
-    <!----------------------------------Catalog----------------------------------- -->
-    <div class="gl-container catalog row ">
-        <div class="catalog-filters col-md-3 ">
-            <div class="catalog-filters__container">
-                <img src="/assets/svg/downarrowbg.svg" class="select-arrow-bg" alt="">
-                <img src="/assets/svg/Arrow [down].svg" class="select-arrow" alt="">
-                <select name="" id="select" class="w-100" class="sort">
-                    <option disabled selected class="d-none">Sort by </option>
-                    <option value="" class="text-center">Featured</option>
-                    <option value="">Newest</option>
-                    <option value="">Best Sellers</option>
-                    <option value="">Price:High-Low</option>
-                    <option value="">Price:Low-High</option>
-                </select>
+  <!----------------------------------Catalog----------------------------------- -->
+  <div class="gl-container catalog row ">
+    <div class="catalog-filters col-md-3 ">
+      <div class="catalog-filters__container">
+        <div class="g-select">
+          <select name="">
+            <option disabled value="">Sort by </option>
+            <option value="">Featured</option>
+            <option value="">Newest</option>
+            <option value="">Best Sellers</option>
+            <option value="">Price:High-Low</option>
+            <option value="">Price:Low-High</option>
+          </select>
+        </div>
+      </div>
+      <!-- colletcion -->
+      <div class="catalog-filters__list page" id="collection">
+        <div class=" catalog-filters__list--title">Collection</div>
+        <div class="content">
+          <div class="content-wrapper">
+            <ul class=" catalog-filters__list--filtres list-unstyled">
+              <li class="catalog-filters__list--item">
+                <a class="active" href="">All</a>
+              </li>
+              <li class="catalog-filters__list--item">
+                <a href="">Shoes</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Bodysuits</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Tops and T-shrits</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Hoddies and Pullovers</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Jackets</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Shorts</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Pants && Tights</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Skirts and Dresses</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Socks</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Accessories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-filters__list page" id="brands">
+        <div class=" catalog-filters__list--title">Brands</div>
+        <div class="content">
+          <div class="content-wrapper">
+            <ul class=" catalog-filters__list--filtres list-unstyled">
+              <li class="catalog-filters__list--item">
+                <a class="" href="">Zara</a>
+              </li>
+              <li class="catalog-filters__list--item">
+                <a href="">Mongo</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Bershka</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Pull & Bear</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Brands END-->
+
+      <!-- Genders -->
+      <div class="catalog-filters__list page gender">
+        <div class=" catalog-filters__list--title">Brands</div>
+        <div class="content">
+          <div class="content-wrapper">
+            <ul class=" catalog-filters__list--filtres list-unstyled">
+              <li class="catalog-filters__list--item">
+                <a class="" href="">Zara</a>
+              </li>
+              <li class="catalog-filters__list--item">
+                <a href="">Mongo</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Bershka</a>
+              </li>
+              <li class=" catalog-filters__list--item">
+                <a href="">Pull & Bear</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Genders end -->
+
+      <!-- Size -->
+      <div class="catalog-filters__list size">
+        <p class="catalog-filters__list--item filter-title">Size</p>
+        <ul class=" catalog-filters__list--filtres list-unstyled d-flex  flex-wrap">
+          <div class="inputs-group">
+            <input type="checkbox" class="catalog-filters__list--size active " id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">30</label>
+          </div>
+          <div class="inputs-group ">
+
+            <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">34</label>
+          </div>
+          <div class="inputs-group">
+            <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">38</label>
+          </div>
+          <div class="inputs-group  justify-content-bewtween">
+
+            <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">31</label>
+          </div>
+          <div class="inputs-group">
+
+            <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">35</label>
+          </div>
+          <div class="inputs-group">
+
+            <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">39</label>
+          </div>
+          <div class="inputs-group">
+
+            <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">32</label>
+          </div>
+          <div class="inputs-group">
+
+            <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">36</label>
+          </div>
+          <div class="inputs-group">
+
+            <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">40</label>
+          </div>
+          <div class="inputs-group">
+
+            <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">33</label>
+          </div>
+          <div class="inputs-group">
+
+            <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">37</label>
+          </div>
+          <div class="inputs-group">
+            <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
+            <label class="catalog-filters__list--label" for="size1">41</label>
+          </div>
+
+        </ul>
+      </div>
+
+      <!-- Size end -->
+
+      <!-- Color Start -->
+
+      <div class="catalog-filters__list color">
+        <p class="catalog-filters__list--item filter-title">Color</p>
+        <ul class=" catalog-filters__list--filtres list-unstyled d-flex  flex-wrap">
+          <li class="color-item mx-1">
+            <input type="checkbox" name="" class="catalog-filters__list--color purple" id="color">
+          </li>
+          <li class="color-item mx-1">
+            <input type="checkbox" name="" class="catalog-filters__list--color orange " id="color">
+          </li>
+          <li class="color-item  mx-1">
+            <input type="checkbox" name="" class="catalog-filters__list--color light-orange" id="color">
+          </li>
+          <li class="color-item  mx-1">
+            <input type="checkbox" name="" class="catalog-filters__list--color green" id="color">
+          </li>
+          <li class="color-item mx-1">
+            <input type="checkbox" name="" class="catalog-filters__list--color blue" id="color">
+          </li>
+          <li class="color-item mx-1">
+            <input type="checkbox" name="" class="catalog-filters__list--color light-green" id="color">
+          </li>
+          <li class="color-item mx-1">
+            <input type="checkbox" name="" class="catalog-filters__list--color light-blue" id="color">
+          </li>
+          <li class="color-item mx-1">
+            <input type="checkbox" name="" class="catalog-filters__list--color yellow" id="color">
+          </li>
+          <li class="color-item mx-1">
+            <input type="checkbox" name="" class="catalog-filters__list--color red" id="color">
+          </li>
+          <li class="color-item mx-1">
+            <input type="checkbox" name="" class="catalog-filters__list--color pink" id="color">
+          </li>
+        </ul>
+      </div>
+
+      <!-- Color end -->
+
+      <!-- Price Strat -->
+
+      <div class="catalog-filters__list price">
+        <p class="catalog-filters__list--item filter-title">Price</p>
+        <div class="catalog-filters__list--filtres">
+          <div class="slider-values">
+            <span class="slider-value" id="slider-range-value1"></span>
+            <span class="slider-values__seperater">-</span>
+            <span class="slider-value" id="slider-range-value2"></span>
+          </div>
+          <div id="slider-range"></div>
+          <form>
+            <input type="hidden" name="min-value" value="" min="0" max="3000">
+            <input type="hidden" name="max-value" value="" min="0" max="3000">
+          </form>
+        </div>
+      </div>
+
+      <!-- Price end -->
+
+    </div>
+    <!-- Brands -->
+
+    <div class="catalog-products col-md-9 pt-0">
+      <div class="catalog-products__wrapper">
+        <div class="catalog-products__card mx-sm-2 mb-5 mx-0  d-flex flex-column">
+          <div class="catalog-products__image-container">
+            <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+            <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+          </div>
+          <div class="catalog-products__info">
+            <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+            <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+            <br><br>
+            <div class="d-flex ">
+              <span class="catalog-products__info--price old ">39.90 USD</span>
+              <span class="catalog-products__info--price new mx-3">5.99 USD</span>
             </div>
-            <!-- colletcion -->
-            <div class="catalog-filters__list page" id="collection">
-                <div class="wrapper">
-                    <div class="content">
-                        <div class=" catalog-filters__list--title">Collection</div>
-                        <ul class=" catalog-filters__list--filtres list-unstyled">
-                            <li class="catalog-filters__list--item active">All</li>
-                            <li class="catalog-filters__list--item">Shoes</li>
-                            <li class=" catalog-filters__list--item">Bodysuits</li>
-                            <li class=" catalog-filters__list--item">Tops and T-shrits</li>
-                            <li class=" catalog-filters__list--item">Hoddies and Pullovers</li>
-                            <li class=" catalog-filters__list--item">Jackets</li>
-                            <li class=" catalog-filters__list--item">Shorts</li>
-                            <li class=" catalog-filters__list--item">Pants && Tights</li>
-                            <li class=" catalog-filters__list--item">Skirts and Dresses</li>
-                            <li class=" catalog-filters__list--item">Socks</li>
-                            <li class=" catalog-filters__list--item">Accessories</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Brands -->
-            <div class="catalog-filters__list page" id="brands">
-                <div class="wrapper">
-                    <div class="content">
-                        <div class=" catalog-filters__list--title">Brands</div>
-                        <ul class=" catalog-filters__list--filtres list-unstyled">
-                            <li class="catalog-filters__list--item active">Zara</li>
-                            <li class="catalog-filters__list--item">Mango</li>
-                            <li class=" catalog-filters__list--item">Bershka</li>
-                            <li class=" catalog-filters__list--item">Pull & Bear</li>
-                            <li class=" catalog-filters__list--item">Stradivarius</li>
-                            <li class=" catalog-filters__list--item">Koton</li>
-                            <li class=" catalog-filters__list--item">Defacto</li>
-                            <li class=" catalog-filters__list--item">Pants && Tights</li>
-                            <li class=" catalog-filters__list--item">Nike</li>
-                            <li class=" catalog-filters__list--item">Adidas</li>
-                            <li class=" catalog-filters__list--item">Lacoste</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Brands END-->
-
-            <!-- Genders -->
-            <div class="catalog-filters__list gender">
-                <ul class=" catalog-filters__list--filtres list-unstyled">
-                    <li class="catalog-filters__list--item active">Man</li>
-                    <li class="catalog-filters__list--item">Woman</li>
-                </ul>
-            </div>
-            <!-- Genders end -->
-            <!-- Kids -->
-            <div class="catalog-filters__list kids">
-                <ul class=" catalog-filters__list--filtres list-unstyled">
-                    <li class="catalog-filters__list--item active">Boy (kids)</li>
-                    <li class="catalog-filters__list--item">Girl(kids)</li>
-                </ul>
-            </div>
-            <!-- Kids end-->
-
-            <!-- Size -->
-            <div class="catalog-filters__list size">
-                <p class="catalog-filters__list--item ">Size</p>
-                <ul class=" catalog-filters__list--filtres list-unstyled d-flex  flex-wrap">
-                    <div class="inputs-group">
-                        <input type="checkbox" class="catalog-filters__list--size active " id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">30</label>
-                    </div>
-                    <div class="inputs-group ">
-
-                        <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">34</label>
-                    </div>
-                    <div class="inputs-group">
-                        <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">38</label>
-                    </div>
-                    <div class="inputs-group  justify-content-bewtween">
-
-                        <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">31</label>
-                    </div>
-                    <div class="inputs-group">
-
-                        <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">35</label>
-                    </div>
-                    <div class="inputs-group">
-
-                        <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">39</label>
-                    </div>
-                    <div class="inputs-group">
-
-                        <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">32</label>
-                    </div>
-                    <div class="inputs-group">
-
-                        <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">36</label>
-                    </div>
-                    <div class="inputs-group">
-
-                        <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">40</label>
-                    </div>
-                    <div class="inputs-group">
-
-                        <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">33</label>
-                    </div>
-                    <div class="inputs-group">
-
-                        <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">37</label>
-                    </div>
-                    <div class="inputs-group">
-                        <input type="checkbox" class="catalog-filters__list--size active" id="size1"></input>
-                        <label class="catalog-filters__list--label" for="size1">41</label>
-                    </div>
-
-                </ul>
-            </div>
-
-            <!-- Size end -->
-
-            <!-- Color Start -->
-
-            <div class="catalog-filters__list color">
-                <p class="catalog-filters__list--item ">Color</p>
-                <ul class=" catalog-filters__list--filtres list-unstyled d-flex  flex-wrap">
-                    <li class="color-item mx-1">
-                        <input type="checkbox" name="" class="catalog-filters__list--color purple" id="color">
-                    </li>
-                    <li class="color-item mx-1">
-                        <input type="checkbox" name="" class="catalog-filters__list--color orange " id="color">
-                    </li>
-                    <li class="color-item  mx-1">
-                        <input type="checkbox" name="" class="catalog-filters__list--color light-orange" id="color">
-                    </li>
-                    <li class="color-item  mx-1">
-                        <input type="checkbox" name="" class="catalog-filters__list--color green" id="color">
-                    </li>
-                    <li class="color-item mx-1">
-                        <input type="checkbox" name="" class="catalog-filters__list--color blue" id="color">
-                    </li>
-                    <li class="color-item mx-1">
-                        <input type="checkbox" name="" class="catalog-filters__list--color light-green" id="color">
-                    </li>
-                    <li class="color-item mx-1">
-                        <input type="checkbox" name="" class="catalog-filters__list--color light-blue" id="color">
-                    </li>
-                    <li class="color-item mx-1">
-                        <input type="checkbox" name="" class="catalog-filters__list--color yellow" id="color">
-                    </li>
-                    <li class="color-item mx-1">
-                        <input type="checkbox" name="" class="catalog-filters__list--color red" id="color">
-                    </li>
-                    <li class="color-item mx-1">
-                        <input type="checkbox" name="" class="catalog-filters__list--color pink" id="color">
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Color end -->
-
-            <!-- Price Strat -->
-
-            <div class="catalog-filters__list price">
-                <p class="catalog-filters__list--item ">Price</p>
-                <div class="catalog-filters__list--filtres d-flex flex-column  justify-content-bewtween">
-                    <ul class="list-unstyled d-flex flex-wrap mb-5">
-                        <li class="catalog-filters__list--price current-price ">0</li>
-                        <li class="catalog-filters__list--price">3000</li>
-                    </ul>
-                    <div class="position-relative">
-                        <input type="range" value="0" class="catalog-filters__list--range mt-3" name="" id="" max="3000" min="0">
-                        <span class="current-thumb"></span>
-                        <span class="thumb"></span>
-                    </div>
-                   
-                </div>
-            </div>
-
-            <!-- Price end -->
-
+          </div>
         </div>
 
-        <div class="catalog-products col-md pt-0 ">
-            <div class=" d-flex justify-content-md-around justify-content-center flex-wrap  ">
-                <div class="catalog-products__card mx-sm-2 mb-5 mx-0  d-flex flex-column">
-                    <div class="catalog-products__image-container">
-                        <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
-                        <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
-                    </div>
-                    <div class="catalog-products__info">
-                        <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
-                        <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
-                        <br><br>
-                        <div class="d-flex ">
-                            <span class="catalog-products__info--price old ">39.90 USD</span>
-                            <span class="catalog-products__info--price new mx-3">5.99 USD</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="catalog-products__card  mx-sm-2 mb-5 mx-0   d-flex flex-column">
-                    <div class="catalog-products__image-container">
-                        <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
-                        <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
-                    </div>
-                    <div class="catalog-products__info">
-                        <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
-                        <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
-                        <br><br>
-                        <div class="d-flex ">
-                            <span class="catalog-products__info--price ">39.90 USD</span>
-                            <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
-                    <div class="catalog-products__image-container">
-                        <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
-                        <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
-                    </div>
-                    <div class="catalog-products__info">
-                        <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
-                        <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
-                        <br><br>
-                        <div class="d-flex ">
-                            <span class="catalog-products__info--price ">39.90 USD</span>
-                            <!-- <span class="catalog-products__info--price new mx-3">5.99  USD</span> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
-                    <div class="catalog-products__image-container">
-                        <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
-                        <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
-                    </div>
-                    <div class="catalog-products__info">
-                        <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
-                        <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
-                        <br><br>
-                        <div class="d-flex ">
-                            <span class="catalog-products__info--price ">39.90 USD</span>
-                            <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
-                    <div class="catalog-products__image-container">
-                        <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
-                        <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
-                    </div>
-                    <div class="catalog-products__info">
-                        <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
-                        <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
-                        <br><br>
-                        <div class="d-flex ">
-                            <span class="catalog-products__info--price ">39.90 USD</span>
-                            <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
-                    <div class="catalog-products__image-container">
-                        <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
-                        <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
-                    </div>
-                    <div class="catalog-products__info">
-                        <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
-                        <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
-                        <br><br>
-                        <div class="d-flex ">
-                            <span class="catalog-products__info--price ">39.90 USD</span>
-                            <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
-                    <div class="catalog-products__image-container">
-                        <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
-                        <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
-                    </div>
-                    <div class="catalog-products__info">
-                        <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
-                        <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
-                        <br><br>
-                        <div class="d-flex ">
-                            <span class="catalog-products__info--price ">39.90 USD</span>
-                            <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
-                        </div>
-                    </div>
-                </div>
-
+        <div class="catalog-products__card  mx-sm-2 mb-5 mx-0   d-flex flex-column">
+          <div class="catalog-products__image-container">
+            <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+            <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+          </div>
+          <div class="catalog-products__info">
+            <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+            <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+            <br><br>
+            <div class="d-flex ">
+              <span class="catalog-products__info--price ">39.90 USD</span>
+              <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
             </div>
+          </div>
         </div>
 
+        <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+          <div class="catalog-products__image-container">
+            <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+            <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+          </div>
+          <div class="catalog-products__info">
+            <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+            <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+            <br><br>
+            <div class="d-flex ">
+              <span class="catalog-products__info--price ">39.90 USD</span>
+              <!-- <span class="catalog-products__info--price new mx-3">5.99  USD</span> -->
+            </div>
+          </div>
+        </div>
 
-        <script>
-            $(document).ready(function () {
-                let listItem =
-                    $('.catalog-filters__list--item').click(function () {
-                        $(this).toggleClass('active')
-                        console.log('aakakakak');
-                    })
-                let heart=$('.catalog-products__card--heart')
-                let range=$('.catalog-filters__list--range');
-                let currentPrice=$('.current-price')
-                let thumb=$('.current-thumb')
-                range.on('input',function(){
-                    currentPrice.html(range.val())
+        <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+          <div class="catalog-products__image-container">
+            <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+            <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+          </div>
+          <div class="catalog-products__info">
+            <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+            <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+            <br><br>
+            <div class="d-flex ">
+              <span class="catalog-products__info--price ">39.90 USD</span>
+              <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+            </div>
+          </div>
+        </div>
 
-                    thumb.css('left',`${range.val() +'%'}`)
-                })
+        <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+          <div class="catalog-products__image-container">
+            <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+            <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+          </div>
+          <div class="catalog-products__info">
+            <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+            <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+            <br><br>
+            <div class="d-flex ">
+              <span class="catalog-products__info--price ">39.90 USD</span>
+              <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+            </div>
+          </div>
+        </div>
 
-                $('.catalog-products__card--heart').click(function(){
-                    $(this).toggleClass('active')
-                })
-                
+        <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+          <div class="catalog-products__image-container">
+            <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+            <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+          </div>
+          <div class="catalog-products__info">
+            <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+            <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+            <br><br>
+            <div class="d-flex ">
+              <span class="catalog-products__info--price ">39.90 USD</span>
+              <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+            </div>
+          </div>
+        </div>
 
-                
-            })
-        </script>
+        <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+          <div class="catalog-products__image-container">
+            <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+            <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+          </div>
+          <div class="catalog-products__info">
+            <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+            <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+            <br><br>
+            <div class="d-flex ">
+              <span class="catalog-products__info--price ">39.90 USD</span>
+              <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/min/noui-slider.min.js"></script>
+  <script src="./js/min/jquery.nice-select.min.js"></script>
+  <script src="./js/range-slider.js"></script>
+  <script>
+    $(".g-select select").each(function (_, el) {
+      $(el).niceSelect()
+    })
+  </script>
 </body>
 
 
