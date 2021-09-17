@@ -561,6 +561,23 @@ body {
   min-height: 60px;
 }
 
+.g-select.disabled {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  pointer-events: none;
+}
+
+.g-select.disabled .nice-select {
+  border: 2px solid !important;
+  color: #a9abbd !important;
+}
+
+.g-select.disabled .nice-select .current {
+  color: inherit;
+}
+
 .g-select .nice-select {
   width: 100%;
   min-height: 60px;
@@ -1104,8 +1121,24 @@ body {
   min-width: 160px;
 }
 
-.product-section .product-details__select .current,
-.product-section .product-details .btn-add .current {
+.product-section .product-details .btn-notify {
+  background-color: #a9abbd;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 20px;
+}
+
+.product-section .product-details .btn-add.disabled {
+  background-color: #a9abbd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  pointer-events: none;
+}
+
+.product-section .product-details__select .current {
   max-width: calc(100% - 25px);
   overflow: hidden;
   text-overflow: ellipsis;

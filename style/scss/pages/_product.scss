@@ -15,6 +15,22 @@ body {
   width: 100%;
   min-height: 60px;
 
+  &.disabled {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    pointer-events: none;
+
+    .nice-select {
+      border: 2px solid !important;
+      color: #a9abbd !important;
+
+      .current {
+        color: inherit;
+      }
+    }
+  }
+
   .nice-select {
     width: 100%;
     min-height: 60px;
@@ -311,7 +327,6 @@ body {
       min-width: 150px;
 
       @media screen and (max-width: 768px) {
-       
         margin-left: 0;
       }
     }
@@ -457,8 +472,23 @@ body {
       min-width: 160px;
     }
 
-    &__select,
+    .btn-notify {
+      background-color: #a9abbd;
+      flex-grow: 1;
+      margin-right: 20px;
+    }
+
     .btn-add {
+      &.disabled {
+        background-color: #a9abbd;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        pointer-events: none;
+      }
+    }
+
+    &__select {
       .current {
         max-width: calc(100% - 25px);
         overflow: hidden;
