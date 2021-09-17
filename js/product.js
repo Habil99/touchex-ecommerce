@@ -11,17 +11,20 @@ const color_links = [...document.querySelectorAll("[color-link]")],
 product_img_btns.forEach(btn => btn.addEventListener("click", () => changeMainImg(btn)));
 
 function changeMainImg(btn) {
-  product_main_img.style.opacity = "0.2"
-  product_main_img.style.transform = "scale(1.02)"
   const img = btn.querySelector("img").src;
+  
+  if (product_main_img.src !== img) {
+    product_main_img.style.opacity = "0.2"
+    product_main_img.style.transform = "scale(1.02)"
+    product_main_img.src = img;
 
-  product_main_img.src = img;
-  timeout()
-
-  clearTimeout(timeout)
+    timeout()
+    clearTimeout(timeout)
+  }
 }
 
 function timeout() {
+  console.log('worked')
   setTimeout(() => {
     product_main_img.style.transform = "scale(1)"
     product_main_img.style.opacity = "1"
