@@ -552,6 +552,10 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+.product-page {
+  margin: 80px 0 260px;
+}
+
 .g-select {
   width: 100%;
   min-height: 60px;
@@ -606,8 +610,90 @@ body {
           box-shadow: 0px 1px 7px rgba(179, 179, 179, 0.25);
 }
 
+.g-accordion .accordion-button:not(.collapsed) {
+  color: #ff7800 !important;
+}
+
+.g-accordion .accordion-button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.g-accordion .accordion-button:hover, .g-accordion .accordion-button:focus {
+  background-color: transparent;
+  color: #606060;
+}
+
+.g-accordion .accordion-button::after {
+  background-color: #ff7800;
+  color: #fff;
+}
+
+.g-accordion .accordion-button.collapsed {
+  color: #606060;
+}
+
+.g-accordion .accordion-button.collapsed::after {
+  color: #ff7800;
+  background-color: rgba(255, 120, 0, 0.2);
+}
+
+.g-accordion .accordion-button::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.g-accordion .accordion-body {
+  color: #606060;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.g-accordion .accordion-body * {
+  font-size: 16px;
+  line-height: 24px;
+  color: #606060;
+}
+
+.g-accordion .accordion-item {
+  border-bottom: 1px solid #ff6d43;
+}
+
+.g-accordion .accordion-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.g-accordion .accordion-reviews {
+  margin-right: 50px;
+}
+
+.g-accordion .accordion-reviews__stars {
+  margin-right: 20px;
+}
+
 .product-section {
-  margin: 80px 0 190px;
+  margin-bottom: 120px;
 }
 
 .product-section .product-view__grid {
@@ -648,6 +734,8 @@ body {
      object-fit: contain;
   width: 100%;
   max-height: 755px;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 .product-section .share-btn {
@@ -938,6 +1026,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .product-section .product-details__select,
@@ -948,12 +1038,23 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-right: 10px;
+  max-width: 290px;
+  margin-bottom: 8px;
+}
+
+.product-section .product-details__select .current,
+.product-section .product-details .btn-add .current {
+  max-width: calc(100% - 25px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .product-section .product-details .btn-add-favorite {
   min-height: 55px !important;
   background: rgba(255, 120, 0, 0.2);
   border-radius: 16px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,5 +1064,144 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.product-section .product-details__accordion {
+  margin-top: 50px;
+  padding: 0 50px;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 30px;
+  color: #606060;
+  margin-bottom: 50px;
+}
+
+.carousel-section .suggested-products-carousel {
+  overflow-x: hidden;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.carousel-section .suggested-products-carousel .swiper-slide {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.carousel-section .suggested-products-carousel .catalog-products__card {
+  width: 330px;
+}
+
+.carousel-section .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #b0b0b0;
+}
+
+.carousel-section .swiper-pagination-bullet-active {
+  background: #ff7800;
+}
+
+.reviews-section {
+  margin-top: 120px;
+}
+
+.reviews-section__wrapper {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 7px rgba(179, 179, 179, 0.25);
+          box-shadow: 0px 1px 7px rgba(179, 179, 179, 0.25);
+  padding: 20px 50px 60px;
+}
+
+.reviews-section .review {
+  padding: 50px 0;
+  border-top: 1px solid #ff6d43;
+}
+
+.reviews-section .review__heading {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reviews-section .review__heading--title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #606060;
+  margin-left: 40px;
+}
+
+.reviews-section .review__rating {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-width: 120px;
+}
+
+.reviews-section .review__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reviews-section .review__img img {
+  width: 113px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 20px;
+}
+
+.reviews-section .review__footer {
+  margin-top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+  color: #606060;
+}
+
+.reviews-section .review__info {
+  margin-right: 20px;
+}
+
+.reviews-section .review__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews-section .review__stats--icon {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 120, 0, 0.2);
+  border-radius: 12px;
+  margin-right: 16px;
+}
+
+.reviews-section .review__stats--icon i {
+  font-size: 18px;
+  color: #FF7800;
 }
 /*# sourceMappingURL=main.css.map */

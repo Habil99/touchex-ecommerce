@@ -7,6 +7,10 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+.product-page {
+  margin: 80px 0 260px;
+}
+
 .g-select {
   width: 100%;
   min-height: 60px;
@@ -52,8 +56,85 @@ body {
   }
 }
 
+.g-accordion {
+  .accordion-button:not(.collapsed) {
+    color: #ff7800 !important;
+  }
+
+  .accordion-button {
+    box-shadow: none;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    font-size: 18px;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: #606060;
+    }
+
+    &::after {
+      background-color: #ff7800;
+      color: #fff;
+    }
+
+    &.collapsed {
+      color: #606060;
+
+      &::after {
+        color: #ff7800;
+        background-color: transparentize(#ff7800, 0.8);
+      }
+    }
+
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f078";
+      background-image: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .accordion-body {
+    color: #606060;
+    font-size: 16px;
+    line-height: 24px;
+
+    * {
+      font-size: 16px;
+      line-height: 24px;
+      color: #606060;
+    }
+  }
+
+  .accordion-item {
+    border-bottom: 1px solid #ff6d43;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .accordion-reviews {
+    margin-right: 50px;
+
+    &__stars {
+      margin-right: 20px;
+    }
+  }
+}
+
 .product-section {
-  margin: 80px 0 190px;
+  margin-bottom: 120px;
 
   .product-view {
     &__grid {
@@ -88,6 +169,7 @@ body {
         object-fit: contain;
         width: 100%;
         max-height: 755px;
+        transition: all 0.4s linear;
       }
     }
   }
@@ -322,6 +404,7 @@ body {
     &__action {
       margin: 80px 0 0;
       display: flex;
+      flex-wrap: wrap;
     }
 
     &__select,
@@ -329,15 +412,142 @@ body {
       flex-shrink: 0;
       flex-grow: 1;
       margin-right: 10px;
+      max-width: 290px;
+      margin-bottom: 8px;
+
+      .current {
+        max-width: calc(100% - 25px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
     }
 
     .btn-add-favorite {
       min-height: 55px !important;
-      background: transparentize(#FF7800, 0.8);
+      background: transparentize(#ff7800, 0.8);
       border-radius: 16px;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    &__accordion {
+      margin-top: 50px;
+      padding: 0 50px;
+    }
+  }
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 30px;
+
+  color: #606060;
+  margin-bottom: 50px;
+}
+
+.carousel-section {
+  .suggested-products-carousel {
+    overflow-x: hidden;
+    padding-bottom: 50px;
+    position: relative;
+
+    .swiper-slide {
+      width: max-content;
+    }
+
+    .catalog-products__card {
+      width: 330px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #b0b0b0;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #ff7800;
+  }
+}
+
+.reviews-section {
+  margin-top: 120px;
+
+  &__wrapper {
+    background: #ffffff;
+    box-shadow: 0px 1px 7px rgba(179, 179, 179, 0.25);
+    padding: 20px 50px 60px;
+  }
+
+  .review {
+    padding: 50px 0;
+    border-top: 1px solid #ff6d43;
+
+    &__heading {
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+
+      &--title {
+        font-size: 16px;
+        line-height: 24px;
+        color: #606060;
+        margin-left: 40px;
+      }
+    }
+
+    &__rating {
+      flex-shrink: 0;
+      min-width: 120px;
+    }
+
+    &__img {
+      display: flex;
+      flex-wrap: wrap;
+
+      img {
+        width: 113px;
+        object-fit: contain;
+        margin-right: 20px;
+      }
+    }
+
+    &__footer {
+      margin-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      line-height: 24px;
+      color: #606060;
+    }
+
+    &__info {
+      margin-right: 20px;
+    }
+
+    &__stats {
+      display: flex;
+      align-items: center;
+
+      &--icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparentize(#ff7800, 0.8);
+        border-radius: 12px;
+        margin-right: 16px;
+        
+        i {
+          font-size: 18px;
+          color: #FF7800;
+        }
+      }
     }
   }
 }

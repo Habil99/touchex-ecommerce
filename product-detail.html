@@ -17,133 +17,472 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <script src="./js/min/jquery.min.js"></script>
 </head>
 
 <body>
   <!----------------------------------Catalog----------------------------------- -->
 
-  <div class="product-section">
+  <div class="product-page">
     <div class="gl-container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="product-view">
-            <div class="product-view__grid">
-              <div class="product-view__swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <button class="button product-img-btn">
-                      <img src="./assets/product/image2.svg" alt="">
-                    </button>
+      <div class="product-section">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="product-view">
+              <div class="product-view__grid">
+                <div class="product-view__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <button class="button product-img-btn" data-product-img>
+                        <img src="./assets/product/image2.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="button product-img-btn" data-product-img>
+                        <img src="./assets/product/image3.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="button product-img-btn" data-product-img>
+                        <img src="./assets/product/image4.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="button product-img-btn" data-product-img>
+                        <img src="./assets/product/image5.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="button product-img-btn" data-product-img>
+                        <img src="./assets/product/image6.svg" alt="">
+                      </button>
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <button class="button product-img-btn">
-                      <img src="./assets/product/image3.svg" alt="">
-                    </button>
+                </div>
+                <div class="product-view__main">
+                  <img src="./assets/product/image7.svg" data-main-img="" alt="">
+                </div>
+              </div>
+            </div>
+            <a class="share-btn" href="https://">
+              <span class="button-icon">
+                <img src="./assets/product/letter.svg" alt="">
+              </span>
+              <span class="button--text">Send to friends</span>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <div class="product-details">
+              <div class="product-details__wrapper">
+                <p class="product-details__title">COMBINATION CROPPED RAINCOAT</p>
+                <p class="product-details__small">Color Pastel yellow | 4391/733</p>
+                <div class="d-flex align-items-center">
+                  <span class="product-details__price">19.99 USD</span>
+                  <span class="product-details__price--discounted">39.90 USD</span>
+                  <span class="product-details__discount-rate">45 % OFF</span>
+                </div>
+                <p class="product-details__brief">
+                  Water repellent raincoat with high collar and adjustable drawstring hood. Long sleeves with
+                  elasticized
+                  cuffs. Front zip pockets. Adjustable elastic srawcord hem with toggle. Front heat-sealed zip closure.
+                </p>
+                <div class="product-details__colors">
+                  <span class="product-details__section-title">Colors:</span>
+                  <span class="product-details__preloader">
+                    <img src="./assets/product/preloader.svg" alt="">
+                  </span>
+                  <span class="product-details__color-links visually-hidden" colors-wrapper>
+                    <a href="" class="product-details__colors--color" data-color="#FF3D00" color-link>
+                      <span></span>
+                    </a>
+                    <a href="" class="product-details__colors--color" data-color="#FFEE97" color-link>
+                      <span></span>
+                    </a>
+                    <a href="" class="product-details__colors--color active" data-color="#BDE2B4" color-link>
+                      <span></span>
+                    </a>
+                  </span>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap">
+                  <div class="d-flex flex-shrink-0 flex-grow-1">
+                    <div class="product-details__sizes">
+                      <span class="product-details__section-title">Size:</span>
+                      <a class="product-details__sizes--link disabled" href="">XS</a>
+                      <a class="product-details__sizes--link active" href="">S</a>
+                      <a class="product-details__sizes--link" href="">M</a>
+                      <a class="product-details__sizes--link disabled" href="">L</a>
+                      <a class="product-details__sizes--link" href="">XL</a>
+                      <a class="product-details__sizes--link" href="">XXL</a>
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <button class="button product-img-btn">
-                      <img src="./assets/product/image4.svg" alt="">
+                  <button class="btn shadow-none button--text product-details__sizes--guide">Size guide</button>
+                </div>
+                <div class="product-details__amount">
+                  <span class="product-details__section-title">Amount:</span>
+                  <div class="product-details__amount--field">
+                    <button class="product-details__change-amount" data-type="decrease" data-decrease-btn=""
+                      data-amount="1">
+                      <img src="./assets/product/arrow-left.svg" alt="">
                     </button>
-                  </div>
-                  <div class="swiper-slide">
-                    <button class="button product-img-btn">
-                      <img src="./assets/product/image5.svg" alt="">
-                    </button>
-                  </div>
-                  <div class="swiper-slide">
-                    <button class="button product-img-btn">
-                      <img src="./assets/product/image6.svg" alt="">
+                    <span class="product-details__amount--ofproduct">1</span>
+                    <button class="product-details__change-amount" data-type="increase" data-increase-btn=""
+                      data-amount="1">
+                      <img src="./assets/product/arrow-right.svg" alt="">
                     </button>
                   </div>
                 </div>
+                <div class="product-details__action">
+                  <div class="product-details__select">
+                    <div class="g-select">
+                      <select class="" name="" id="">
+                        <option value="1" disabled>Select address</option>
+                        <option value="2">Address 1</option>
+                        <option value="3">Address 2</option>
+                        <option value="3"> Water repellent raincoat with high colla</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button class="button button--default button--bordered btn-add">Add to bag</button>
+                  <button class="button btn-add-favorite">
+                    <img src="./assets/product/Vector.svg" alt="">
+                  </button>
+                </div>
               </div>
-              <div class="product-view__main">
-                <img src="./assets/product/image7.svg" alt="">
+              <div class="g-accordion">
+                <div class="accordion product-details__accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                      Warranty
+                    </button>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        This is the first item's accordion body.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                      Product Description
+                    </button>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        We work with monitoring programs to guarantee compliance with the health, safety, and quality
+                        standards for our products.
+
+                        The Green to Wear 2.0 standard aims to minimize the environmental impact of textile
+                        manufacturing.
+                        To do this, we have developed Inditex’s The List program which helps us guarantee both the
+                        purity
+                        of production processes and the health and safety of our garments.
+                        OUTER SHELL
+                        MAIN FABRIC
+                        100% nylon
+                        SECONDARY FABRIC
+                        100% polyester
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
+                      Returns & Free shipping
+                    </button>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        This is the first item's accordion body.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour" aria-expanded="true" aria-controls="flush-collapseFour">
+                      <span class="accordion-reviews">Reviews (7)</span>
+                      <span class="accordion-reviews__stars">
+                        <img src="./assets/product/Star 1.svg" alt="">
+                        <img src="./assets/product/Star 1.svg" alt="">
+                        <img src="./assets/product/Star 1.svg" alt="">
+                        <img src="./assets/product/Star 1.svg" alt="">
+                        <img src="./assets/product/Star 5.svg" alt="">
+                      </span>
+                      <span class="accordion-reviews__rating">4.7</span>
+                    </button>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        This is the first item's accordion body.
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
               </div>
             </div>
           </div>
-          <a class="share-btn" href="https://">
-            <span class="button-icon">
-              <img src="./assets/product/letter.svg" alt="">
-            </span>
-            <span class="button--text">Send to friends</span>
-          </a>
         </div>
-        <div class="col-lg-6">
-          <div class="product-details">
-            <div class="product-details__wrapper">
-              <p class="product-details__title">COMBINATION CROPPED RAINCOAT</p>
-              <p class="product-details__small">Color Pastel yellow | 4391/733</p>
-              <div class="d-flex align-items-center">
-                <span class="product-details__price">19.99 USD</span>
-                <span class="product-details__price--discounted">39.90 USD</span>
-                <span class="product-details__discount-rate">45 % OFF</span>
+      </div>
+      <div class="carousel-section">
+        <p class="section-title">
+          You might also like
+        </p>
+        <div class="suggested-products-carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+                <div class="catalog-products__image-container">
+                  <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+                  <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+                </div>
+                <div class="catalog-products__info">
+                  <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+                  <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+                  <br><br>
+                  <div class="d-flex ">
+                    <span class="catalog-products__info--price ">39.90 USD</span>
+                    <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+                  </div>
+                </div>
               </div>
-              <p class="product-details__brief">
-                Water repellent raincoat with high collar and adjustable drawstring hood. Long sleeves with elasticized
-                cuffs. Front zip pockets. Adjustable elastic srawcord hem with toggle. Front heat-sealed zip closure.
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+                <div class="catalog-products__image-container">
+                  <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+                  <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+                </div>
+                <div class="catalog-products__info">
+                  <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+                  <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+                  <br><br>
+                  <div class="d-flex ">
+                    <span class="catalog-products__info--price ">39.90 USD</span>
+                    <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+                <div class="catalog-products__image-container">
+                  <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+                  <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+                </div>
+                <div class="catalog-products__info">
+                  <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+                  <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+                  <br><br>
+                  <div class="d-flex ">
+                    <span class="catalog-products__info--price ">39.90 USD</span>
+                    <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+                <div class="catalog-products__image-container">
+                  <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+                  <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+                </div>
+                <div class="catalog-products__info">
+                  <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+                  <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+                  <br><br>
+                  <div class="d-flex ">
+                    <span class="catalog-products__info--price ">39.90 USD</span>
+                    <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+                <div class="catalog-products__image-container">
+                  <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+                  <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+                </div>
+                <div class="catalog-products__info">
+                  <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+                  <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+                  <br><br>
+                  <div class="d-flex ">
+                    <span class="catalog-products__info--price ">39.90 USD</span>
+                    <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+                <div class="catalog-products__image-container">
+                  <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+                  <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+                </div>
+                <div class="catalog-products__info">
+                  <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+                  <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+                  <br><br>
+                  <div class="d-flex ">
+                    <span class="catalog-products__info--price ">39.90 USD</span>
+                    <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+                <div class="catalog-products__image-container">
+                  <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+                  <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+                </div>
+                <div class="catalog-products__info">
+                  <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+                  <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+                  <br><br>
+                  <div class="d-flex ">
+                    <span class="catalog-products__info--price ">39.90 USD</span>
+                    <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-products__card  mx-sm-2 mb-5 mx-0  d-flex flex-column">
+                <div class="catalog-products__image-container">
+                  <img src="./assets/svg/image 8.svg" class="catalog-products__card--image" alt="">
+                  <img src="./assets/svg/heart.svg" alt="" class="catalog-products__card--heart">
+                </div>
+                <div class="catalog-products__info">
+                  <h3 class="catalog-products__info--name">SATIN EFFECT SHOULDER BAG</h3>
+                  <p class="catalog-products__info--color ">Color Pastel yellow | 4391/733</p>
+                  <br><br>
+                  <div class="d-flex ">
+                    <span class="catalog-products__info--price ">39.90 USD</span>
+                    <!-- <span class="catalog-products__info--price new mx-0">5.99  USD</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="reviews-section">
+        <p class="section-title">Reviews</p>
+        <div class="reviews-section__wrapper">
+          <p class="text-center">
+            234 reviews / 76 comment
+          </p>
+          <div class="review">
+            <div class="review__heading">
+              <div class="review__rating">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 5.svg" alt="">
+              </div>
+              <p class="review__heading--title">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p>
-              <div class="product-details__colors">
-                <span class="product-details__section-title">Colors:</span>
-                <span class="product-details__preloader">
-                  <img src="./assets/product/preloader.svg" alt="">
+            </div>
+            <div class="review__img">
+              <img src="./assets/product/image1.svg" alt="">
+              <img src="./assets/product/image3.svg" alt="">
+            </div>
+            <div class="review__footer">
+              <p class="review__info">S*** T*** / 30.08.2021</p>
+              <div class="review__stats">
+                <span class="review__stats--icon"> 
+                  <i class="fas fa-thumbs-up"></i>
                 </span>
-                <span class="product-details__color-links visually-hidden" colors-wrapper>
-                  <a href="" class="product-details__colors--color" data-color="#FF3D00" color-link>
-                    <span></span>
-                  </a>
-                  <a href="" class="product-details__colors--color" data-color="#FFEE97" color-link>
-                    <span></span>
-                  </a>
-                  <a href="" class="product-details__colors--color active" data-color="#BDE2B4" color-link>
-                    <span></span>
-                  </a>
+                Like comment (37)
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review__heading">
+              <div class="review__rating">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 5.svg" alt="">
+              </div>
+              <p class="review__heading--title">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+            </div>
+            <div class="review__img">
+              <img src="./assets/product/image1.svg" alt="">
+              <img src="./assets/product/image3.svg" alt="">
+            </div>
+            <div class="review__footer">
+              <p class="review__info">S*** T*** / 30.08.2021</p>
+              <div class="review__stats">
+                <span class="review__stats--icon"> 
+                  <i class="fas fa-thumbs-up"></i>
                 </span>
+                Like comment (37)
               </div>
-              <div class="d-flex justify-content-between flex-wrap">
-                <div class="d-flex flex-shrink-0 flex-grow-1">
-                  <div class="product-details__sizes">
-                    <span class="product-details__section-title">Size:</span>
-                    <a class="product-details__sizes--link disabled" href="">XS</a>
-                    <a class="product-details__sizes--link active" href="">S</a>
-                    <a class="product-details__sizes--link" href="">M</a>
-                    <a class="product-details__sizes--link disabled" href="">L</a>
-                    <a class="product-details__sizes--link" href="">XL</a>
-                    <a class="product-details__sizes--link" href="">XXL</a>
-                  </div>
-                </div>
-                <button class="btn shadow-none button--text product-details__sizes--guide">Size guide</button>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review__heading">
+              <div class="review__rating">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 5.svg" alt="">
               </div>
-              <div class="product-details__amount">
-                <span class="product-details__section-title">Amount:</span>
-                <div class="product-details__amount--field">
-                  <button class="product-details__change-amount" data-type="decrease" data-decrease-btn=""
-                    data-amount="1">
-                    <img src="./assets/product/arrow-left.svg" alt="">
-                  </button>
-                  <span class="product-details__amount--ofproduct">1</span>
-                  <button class="product-details__change-amount" data-type="increase" data-increase-btn=""
-                    data-amount="1">
-                    <img src="./assets/product/arrow-right.svg" alt="">
-                  </button>
-                </div>
+              <p class="review__heading--title">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+            </div>
+            <div class="review__img">
+              <img src="./assets/product/image1.svg" alt="">
+              <img src="./assets/product/image3.svg" alt="">
+            </div>
+            <div class="review__footer">
+              <p class="review__info">S*** T*** / 30.08.2021</p>
+              <div class="review__stats">
+                <span class="review__stats--icon"> 
+                  <i class="fas fa-thumbs-up"></i>
+                </span>
+                Like comment (37)
               </div>
-              <div class="product-details__action">
-                <div class="product-details__select">
-                  <div class="g-select">
-                    <select class="" name="" id="">
-                      <option value="1" disabled>Select address</option>
-                      <option value="2">Address 1</option>
-                      <option value="3">Address 2</option>
-                    </select>
-                  </div>
-                </div>
-                <button class="button button--default button--bordered btn-add">Add to bag</button>
-                <button class="button btn-add-favorite">
-                  <img src="./assets/product/Vector.svg" alt="">
-                </button>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review__heading">
+              <div class="review__rating">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 1.svg" alt="">
+                <img src="./assets/product/Star 5.svg" alt="">
+              </div>
+              <p class="review__heading--title">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+            </div>
+            <div class="review__img">
+              <img src="./assets/product/image1.svg" alt="">
+              <img src="./assets/product/image3.svg" alt="">
+            </div>
+            <div class="review__footer">
+              <p class="review__info">S*** T*** / 30.08.2021</p>
+              <div class="review__stats">
+                <span class="review__stats--icon"> 
+                  <i class="fas fa-thumbs-up"></i>
+                </span>
+                Like comment (37)
               </div>
             </div>
           </div>
@@ -155,6 +494,7 @@
   <script src="./js/min/jquery.nice-select.min.js"></script>
   <script src="./js/min/swiper-bundle.min.js"></script>
   <script src="./js/product-carousel.js"></script>
+  <script src="./js/min/bootstrap-bundle.min.js"></script>
   <script src="./js/product.js"></script>
 
 </body>
