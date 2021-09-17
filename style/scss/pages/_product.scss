@@ -141,12 +141,30 @@ body {
       display: grid;
       grid-template-columns: 140px 1fr;
       grid-column-gap: 20px;
+
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
     }
 
     &__swiper {
       grid-column: 1/ 2;
       height: 755px;
-      overflow-y: hidden;
+      overflow: hidden;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 20px;
+        height: max-content !important;
+
+        .swiper {
+          height: max-content !important;
+        }
+
+        .swiper-slide {
+          width: max-content !important;
+        }
+      }
 
       .swiper {
         height: 755px;
@@ -164,6 +182,9 @@ body {
     &__main {
       height: 755px;
 
+      @media screen and (max-width: 768px) {
+        height: auto;
+      }
       img {
         max-width: 100%;
         object-fit: contain;
@@ -181,6 +202,7 @@ body {
     width: max-content;
     padding: 8px 16px;
     position: relative;
+    margin-bottom: 30px;
 
     &:hover {
       &::before {
@@ -248,6 +270,10 @@ body {
       font-weight: 600;
       font-size: 30px;
       color: #606060;
+
+      @media screen and (max-width: 768px) {
+        font-size: 25px;
+      }
     }
 
     &__small {
@@ -282,6 +308,12 @@ body {
       font-weight: 600;
       font-size: 26px;
       color: #ff6d43;
+      min-width: 150px;
+
+      @media screen and (max-width: 768px) {
+       
+        margin-left: 0;
+      }
     }
 
     &__brief {
@@ -337,7 +369,10 @@ body {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      margin: 50px 0;
+
+      &--wrapper {
+        margin: 50px 0;
+      }
 
       &--link {
         font-weight: 600;
@@ -361,6 +396,11 @@ body {
         font-weight: 600;
         font-size: 14px;
         color: #606060;
+
+        @media screen and (max-width: 768px) {
+          padding-left: 0;
+          margin-top: 20px;
+        }
       }
     }
 
@@ -414,7 +454,11 @@ body {
       margin-right: 10px;
       max-width: 290px;
       margin-bottom: 8px;
+      min-width: 160px;
+    }
 
+    &__select,
+    .btn-add {
       .current {
         max-width: calc(100% - 25px);
         overflow: hidden;
@@ -436,6 +480,10 @@ body {
     &__accordion {
       margin-top: 50px;
       padding: 0 50px;
+
+      @media screen and (max-width: 768px) {
+        padding: 0 20px;
+      }
     }
   }
 }
@@ -496,13 +544,13 @@ body {
         font-size: 16px;
         line-height: 24px;
         color: #606060;
-        margin-left: 40px;
       }
     }
 
     &__rating {
       flex-shrink: 0;
       min-width: 120px;
+      margin-right: 40px;
     }
 
     &__img {
@@ -513,6 +561,7 @@ body {
         width: 113px;
         object-fit: contain;
         margin-right: 20px;
+        margin-bottom: 20px;
       }
     }
 
@@ -523,6 +572,7 @@ body {
       font-size: 16px;
       line-height: 24px;
       color: #606060;
+      flex-wrap: wrap;
     }
 
     &__info {
@@ -532,6 +582,8 @@ body {
     &__stats {
       display: flex;
       align-items: center;
+      min-width: 170px;
+      flex-shrink: 0;
 
       &--icon {
         width: 40px;
@@ -542,10 +594,10 @@ body {
         background: transparentize(#ff7800, 0.8);
         border-radius: 12px;
         margin-right: 16px;
-        
+
         i {
           font-size: 18px;
-          color: #FF7800;
+          color: #ff7800;
         }
       }
     }

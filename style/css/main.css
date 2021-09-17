@@ -704,12 +704,43 @@ body {
   grid-column-gap: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .product-section .product-view__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .product-section .product-view__swiper {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/ 2;
   height: 755px;
-  overflow-y: hidden;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .product-section .product-view__swiper {
+    margin-top: 20px;
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+  }
+  .product-section .product-view__swiper .swiper {
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+  }
+  .product-section .product-view__swiper .swiper-slide {
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+  }
 }
 
 .product-section .product-view__swiper .swiper {
@@ -726,6 +757,12 @@ body {
 
 .product-section .product-view__main {
   height: 755px;
+}
+
+@media screen and (max-width: 768px) {
+  .product-section .product-view__main {
+    height: auto;
+  }
 }
 
 .product-section .product-view__main img {
@@ -751,6 +788,7 @@ body {
   width: max-content;
   padding: 8px 16px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .product-section .share-btn:hover::before {
@@ -828,6 +866,12 @@ body {
   color: #606060;
 }
 
+@media screen and (max-width: 768px) {
+  .product-section .product-details__title {
+    font-size: 25px;
+  }
+}
+
 .product-section .product-details__small {
   font-weight: 600;
   font-size: 14px;
@@ -860,6 +904,13 @@ body {
   font-weight: 600;
   font-size: 26px;
   color: #ff6d43;
+  min-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .product-section .product-details__discount-rate {
+    margin-left: 0;
+  }
 }
 
 .product-section .product-details__brief {
@@ -937,6 +988,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.product-section .product-details__sizes--wrapper {
   margin: 50px 0;
 }
 
@@ -965,6 +1019,13 @@ body {
   font-weight: 600;
   font-size: 14px;
   color: #606060;
+}
+
+@media screen and (max-width: 768px) {
+  .product-section .product-details__sizes--guide {
+    padding-left: 0;
+    margin-top: 20px;
+  }
 }
 
 .product-section .product-details__amount {
@@ -1040,6 +1101,7 @@ body {
   margin-right: 10px;
   max-width: 290px;
   margin-bottom: 8px;
+  min-width: 160px;
 }
 
 .product-section .product-details__select .current,
@@ -1069,6 +1131,12 @@ body {
 .product-section .product-details__accordion {
   margin-top: 50px;
   padding: 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .product-section .product-details__accordion {
+    padding: 0 20px;
+  }
 }
 
 .section-title {
@@ -1133,13 +1201,13 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #606060;
-  margin-left: 40px;
 }
 
 .reviews-section .review__rating {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   min-width: 120px;
+  margin-right: 40px;
 }
 
 .reviews-section .review__img {
@@ -1155,6 +1223,7 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .reviews-section .review__footer {
@@ -1168,6 +1237,8 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #606060;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .reviews-section .review__info {
@@ -1181,6 +1252,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 170px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .reviews-section .review__stats--icon {
@@ -1202,6 +1276,6 @@ body {
 
 .reviews-section .review__stats--icon i {
   font-size: 18px;
-  color: #FF7800;
+  color: #ff7800;
 }
 /*# sourceMappingURL=main.css.map */
