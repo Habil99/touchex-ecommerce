@@ -1,9 +1,9 @@
 const color_links = [...document.querySelectorAll("[color-link]")],
   preloader = document.querySelector(".product-details__preloader"),
   colors_wrapper = document.querySelector('[colors-wrapper]'),
-  amount = document.querySelector(".product-details__amount--ofproduct"),
-  increase = document.querySelector("[data-increase-btn]"),
-  decrease = document.querySelector("[data-decrease-btn]"),
+  amount = [...document.querySelectorAll(".product-details__amount--ofproduct")],
+  increase = [...document.querySelectorAll("[data-increase-btn]")],
+  decrease = [...document.querySelectorAll("[data-decrease-btn]")],
   product_img_btns = [...document.querySelectorAll("[data-product-img]")],
   product_main_img = document.querySelector("[data-main-img]");
 
@@ -12,7 +12,7 @@ product_img_btns.forEach(btn => btn.addEventListener("click", () => changeMainIm
 
 function changeMainImg(btn) {
   const img = btn.querySelector("img").src;
-  
+
   if (product_main_img.src !== img) {
     product_main_img.style.opacity = "0.2"
     product_main_img.style.transform = "scale(1.02)"
@@ -50,28 +50,30 @@ color_links.forEach(link => {
   }
 });
 
-[increase, decrease].forEach(btn => {
-  btn.addEventListener("click", () => changeAmount(btn));
+[increase, decrease].forEach(collectionBtn => {
+  collectionBtn.forEach((btn, i) => {
+    btn.addEventListener("click", () => changeAmount(btn, i));
+  })
 })
 
-function changeAmount(btn) {
+function changeAmount(btn, i) {
   const $amount = parseInt(btn.dataset['amount']);
   const type = btn.dataset['type'] || btn.dataset['type'];
-  let value = parseInt(amount.textContent)
+  let value = parseInt(amount[i].textContent)
 
   if (type === 'increase') {
     value += $amount;
 
-    amount.innerHTML = value
+    amount[i].innerHTML = value
   } else if (type === 'decrease') {
     if (value === 0) {
       value === 0;
 
-      amount.innerHTML = value;
+      amount[i].innerHTML = value;
     } else {
       value -= $amount;
 
-      amount.innerHTML = value
+      amount[i].innerHTML = value
     }
   }
 }

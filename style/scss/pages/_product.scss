@@ -656,3 +656,40 @@ body {
     }
   }
 }
+
+.product-details__amount {
+  display: flex;
+  align-items: center;
+
+  &--field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #ff7800;
+    padding: 14px;
+    border-radius: 10px;
+    min-width: 155px;
+  }
+
+  &--ofproduct {
+    color: #ff7800;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.product-details__change-amount {
+  width: 22px;
+  height: 22px;
+  background: transparentize(#ff7800, 0.8);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+
+  img {
+    object-fit: contain;
+  }
+}
