@@ -1650,4 +1650,510 @@ body {
 .cart-page .order-card .btn-total {
   margin-top: 50px;
 }
+
+.button--light {
+  background-color: rgba(255, 120, 0, 0.2);
+  color: #ff7800;
+}
+
+.button--light img {
+  width: 24px;
+}
+
+.button--light:hover {
+  background-color: rgba(255, 120, 0, 0.15);
+}
+
+.ecommerce-btn-more {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 72px;
+  color: #606060;
+}
+
+.button--icon {
+  border-radius: 16px;
+  width: 60px;
+  height: 60px;
+}
+
+.ecommerce-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ff6d43;
+  margin: 50px 0;
+}
+
+.shops-swiper {
+  overflow: hidden;
+}
+
+.shops-swiper-wrapper {
+  padding: 0 40px;
+  position: relative;
+  margin-bottom: 84px;
+}
+
+.shops-swiper .swiper-slide {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
+}
+
+.shops-swiper-navigation-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(255, 120, 0, 0.2);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  outline: none;
+  color: #ff7800;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.shops-swiper-navigation-btn:hover {
+  background: #ff7800;
+  color: #fff;
+}
+
+.shops-swiper-navigation-btn.__left {
+  left: 0;
+}
+
+.shops-swiper-navigation-btn.__right {
+  right: 0;
+}
+
+.shops-card {
+  width: 94px;
+  height: 94px;
+  position: relative;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.shops-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(from 180deg at 50% 50%, #ff6d43 0deg, #f5df4d 360deg);
+  -webkit-transform: matrix(0, -1, -1, 0, 0, 0);
+          transform: matrix(0, -1, -1, 0, 0, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.shops-card:hover::before {
+  -webkit-transform: rotateZ(-520deg) matrix(0, -1, -1, 0, 0, 0);
+          transform: rotateZ(-520deg) matrix(0, -1, -1, 0, 0, 0);
+}
+
+.shops-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.main-section {
+  margin: 80px 0 190px;
+}
+
+.main-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 1fr;
+      grid-template-columns: 450px 1fr;
+  grid-column-gap: 60px;
+  grid-row-gap: 40px;
+}
+
+@media screen and (max-width: 1920px) {
+  .main-grid {
+    -ms-grid-columns: 350px 1fr;
+        grid-template-columns: 350px 1fr;
+    grid-column-gap: 30px;
+  }
+}
+
+.ecommerce-filter-list {
+  list-style: none;
+  margin-right: 60px;
+  padding-left: 0;
+}
+
+.ecommerce-filter-list-item {
+  margin-bottom: 10px;
+}
+
+.ecommerce-filter-list-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #606060;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.ecommerce-filter-list-item a:hover {
+  color: #ff7800;
+}
+
+.ecommerce-filter-list-item a img {
+  max-width: 20px;
+}
+
+.ecommerce-filter-list-icon {
+  width: 20px;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ecommerce-welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 7px rgba(179, 179, 179, 0.25);
+          box-shadow: 0px 1px 7px rgba(179, 179, 179, 0.25);
+  padding: 50px 20px;
+}
+
+.ecommerce-welcome-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #323244;
+  margin-bottom: 16px;
+}
+
+.ecommerce-welcome-subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  color: #606060;
+  padding: 0 26px;
+}
+
+.ecommerce-welcome .button {
+  margin-top: 50px;
+}
+
+.ecommerce-info {
+  background: #323244;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 22px 0 22px 22px;
+  padding: 75px 45px;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.ecommerce-info::before {
+  content: "";
+  position: absolute;
+  right: 35px;
+  top: -34px;
+  width: 68px;
+  height: 68px;
+  background: conic-gradient(from 180deg at 50% 50%, #ff6d43 0deg, #f5df4d 360deg);
+  -webkit-transform: matrix(0, -1, -1, 0, 0, 0);
+          transform: matrix(0, -1, -1, 0, 0, 0);
+  border-radius: 50%;
+}
+
+.ecommerce-info-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.ecommerce-info-text {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.social-accounts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social-accounts-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #323244;
+  margin-bottom: 30px;
+}
+
+.social-accounts .grid a:not(:last-child) {
+  margin-right: 43px;
+}
+
+.ecommerce-banner-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 320px;
+      grid-template-columns: 1fr 320px;
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 1920px) {
+  .ecommerce-banner-grid {
+    -ms-grid-columns: 1fr 220px;
+        grid-template-columns: 1fr 220px;
+  }
+}
+
+.ecommerce-banner-grid .ecommerce-banner-right {
+  background-color: white;
+  background-image: url("../../../assets/svg/shops/banner-2.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.ecommerce-banner-grid .ecommerce-banner-right .button {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: calc(100% - 20px);
+}
+
+@media screen and (max-width: 1920px) {
+  .ecommerce-banner-grid .ecommerce-banner-right .button {
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .ecommerce-banner-grid .ecommerce-banner-right {
+    height: 560px;
+  }
+}
+
+.ecommerce-banner-swiper {
+  overflow: hidden;
+  position: relative;
+}
+
+.ecommerce-banner-swiper .swiper-pagination-bullets {
+  position: absolute;
+  z-index: 1;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%) !important;
+          transform: translateX(-50%) !important;
+  bottom: 50px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ecommerce-banner-swiper .swiper-pagination-bullet {
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.ecommerce-banner-swiper .swiper-pagination-bullet-active {
+  background-color: #ff7800;
+}
+
+.ecommerce-banner-swiper .swiper-slide {
+  height: auto;
+  background-color: white;
+  background-image: url("../../../assets/svg/shops/banner.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+@media screen and (min-width: 1920px) {
+  .ecommerce-banner-swiper .swiper-slide {
+    height: 560px;
+  }
+}
+
+.ecommerce-banner-swiper-img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.ecommerce-products-wrapper {
+  margin: 50px 0 0;
+}
+
+.ecommerce-products-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 72px;
+  color: #606060;
+  margin-bottom: 20px;
+}
+
+.ecommerce-products-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(280px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+}
+
+.ecommerce-product {
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ecommerce-product:hover {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 7px rgba(179, 179, 179, 0.25);
+          box-shadow: 0px 1px 7px rgba(179, 179, 179, 0.25);
+}
+
+.ecommerce-product-checkbox:checked + .ecommerce-product-label i:last-child {
+  display: block;
+}
+
+.ecommerce-product-checkbox:checked + .ecommerce-product-label i:first-child {
+  display: none;
+}
+
+.ecommerce-product-label {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+  padding: 10px;
+  cursor: pointer;
+  color: #ff7800;
+  font-size: 28px;
+}
+
+.ecommerce-product-label i:last-child {
+  display: none;
+}
+
+.ecommerce-product-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ecommerce-product-body {
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.ecommerce-product-body .grid .ecommerce-product-price {
+  margin-right: 20px;
+}
+
+.ecommerce-product-price-discounted {
+  color: #ff6d43;
+}
+
+.ecommerce-product-name, .ecommerce-product-price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #606060;
+}
+
+.ecommerce-product-name,
+.ecommerce-product .grid {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.ecommerce-product-expected {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #b0b0b0;
+}
 /*# sourceMappingURL=main.css.map */

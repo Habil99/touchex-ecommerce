@@ -587,13 +587,13 @@ progress {
   color: #6c757d;
 }
 
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
+.b-container,
+.b-container-fluid,
+.b-container-xxl,
+.b-container-xl,
+.b-container-lg,
+.b-container-md,
+.b-container-sm {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -602,27 +602,27 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .container-sm, .container {
+  .b-container-sm, .b-container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container {
+  .b-container-md, .b-container-sm, .b-container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
+  .b-container-lg, .b-container-md, .b-container-sm, .b-container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .b-container-xl, .b-container-lg, .b-container-md, .b-container-sm, .b-container {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .b-container-xxl, .b-container-xl, .b-container-lg, .b-container-md, .b-container-sm, .b-container {
     max-width: 1320px;
   }
 }
@@ -3936,13 +3936,13 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-sm,
-.navbar > .container-md,
-.navbar > .container-lg,
-.navbar > .container-xl,
-.navbar > .container-xxl {
+.navbar > .b-container,
+.navbar > .b-container-fluid,
+.navbar > .b-container-sm,
+.navbar > .b-container-md,
+.navbar > .b-container-lg,
+.navbar > .b-container-xl,
+.navbar > .b-container-xxl {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
@@ -5182,14 +5182,14 @@ textarea.form-control-lg {
   display: none;
 }
 
-.toast-container {
+.toast-b-container {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   max-width: 100%;
   pointer-events: none;
 }
-.toast-container > :not(:last-child) {
+.toast-b-container > :not(:last-child) {
   margin-bottom: 0.75rem;
 }
 
