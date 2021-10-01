@@ -2,615 +2,1353 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./style/css/main.css" />
-    <!-- <link rel="stylesheet" href="./style/scss/main.css"> -->
-    <link rel="stylesheet" href="./style/css/touchex/common.css">
-    <link rel="stylesheet" href="./style/css/touchex/vendor.css">
-    <link rel="stylesheet" href="./style/css/touchex/site.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="./style/css/main.css" />
+  <!-- <link rel="stylesheet" href="./style/scss/main.css"> -->
+  <link rel="stylesheet" href="./style/css/touchex/common.css">
+  <link rel="stylesheet" href="./style/css/touchex/vendor.css">
+  <link rel="stylesheet" href="./style/css/touchex/site.css">
 
-    <link rel="stylesheet" href="./style/css/swiper/swiper.min.css" />
-    <link rel="stylesheet" href="./style/css/nice-select/nice-select.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <script src="./js/min/jquery.min.js"></script>
+  <link rel="stylesheet" href="./style/css/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="./style/css/nice-select/nice-select.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <script src="./js/min/jquery.min.js"></script>
 </head>
 
 <body>
-    <!----------------------------------Main----------------------------------- -->
+  <!----------------------------------Main----------------------------------- -->
+  <div class="layout__header">
+    <div class="header header--desktop">
+      <div class="container container--hd">
+        <div class="grid _flex-nowrap _hspace-lg _hd-space-xxl">
+          <div class="gcell _xl-flex-noshrink">
+            <a class="logo logo--desktop" href="/ru/" title="На главную">
+              <div class="logo__image">
+                <img src="https://devstg.touchex.net/media/logo/1627992943_3324144_touchex_logo.png" width="300">
+              </div>
+              <div class="logo__slogan">Приятная&nbsp;покупка — Быстрая&nbsp;доставка</div>
+            </a>
+          </div>
+          <div class="gcell _flex-grow">
+            <div class="grid _hspace-def _flex-nowrap">
+              <div class="gcell _flex-grow">
+                <div class="header__navbar">
+                  <nav class="navbar js-init is-initialized" data-navbar="">
+                    <ul class="navbar__list" data-navbar-list="">
 
-    <div class="main-section">
-        <div class="container container--hd">
-            <div class="shops-swiper-wrapper">
-                <button class="shops-swiper-navigation-btn __left" id="shops-swiper-navigation-left">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="shops-swiper-navigation-btn __right" id="shops-swiper-navigation-right">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                <div class="shops-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-1.svg" alt="">
-                            </div>
+
+
+
+                      <li class="navbar__item has-nested" data-navbar-item="" data-navbar-item-lock="">
+                        <a class="navbar__text">Каталог магазинов</a>
+
+                        <div class="navbar__item-chevron">
+                          <svg class="svg-icon svg-icon--down" width="8" height="5">
+                            <use xlink:href="/static/assets/svg/sprite.svg#down">
+                            </use>
+                          </svg>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-3.svg" alt="">
-                            </div>
+
+                        <ul class="navbar__sublist user-dropdown">
+
+                          <li class="navbar__item ">
+                            <a class="navbar__link" href="https://devstg.touchex.net/ru/shops/">Все</a>
+                          </li>
+
+                          <li class="navbar__item ">
+                            <a class="navbar__link"
+                              href="https://devstg.touchex.net/ru/shops/?country=&amp;category=footwear">Сапоги
+                              и туфли</a>
+                          </li>
+
+                          <li class="navbar__item ">
+                            <a class="navbar__link"
+                              href="https://devstg.touchex.net/ru/shops/?country=&amp;category=casual_wear">Повседневная
+                              одежда</a>
+                          </li>
+
+                          <li class="navbar__item ">
+                            <a class="navbar__link"
+                              href="https://devstg.touchex.net/ru/shops/?country=&amp;category=cosmetics_and_hygiene">Косметика
+                              и гигиена</a>
+                          </li>
+
+                          <li class="navbar__item ">
+                            <a class="navbar__link"
+                              href="https://devstg.touchex.net/ru/shops/?country=&amp;category=clothes_and_footwear">Одежда
+                              и обувь</a>
+                          </li>
+
+                          <li class="navbar__item ">
+                            <a class="navbar__link"
+                              href="https://devstg.touchex.net/ru/shops/?country=&amp;category=electronics_and_tech">Техника
+                              и электроника</a>
+                          </li>
+
+                        </ul>
+                      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      <li class="navbar__item has-nested" data-navbar-item="" data-navbar-item-lock="">
+                        <a class="navbar__text">Инфо</a>
+
+                        <div class="navbar__item-chevron">
+                          <svg class="svg-icon svg-icon--down" width="8" height="5">
+                            <use xlink:href="/static/assets/svg/sprite.svg#down">
+                            </use>
+                          </svg>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-2.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-3.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-4.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-5.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-6.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-4.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-5.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-6.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-4.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-5.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-6.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-3.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-4.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-5.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shops-card">
-                                <a class="stretched-link" href=""></a>
-                                <img src="./assets/svg/shops/shop-6.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-grid">
-                <div class="ecommerce-sidebar">
-                    <ul class="ecommerce-filter-list">
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-1.svg" alt="">
-                                </span>
-                                <span>Ноутбуки та комп’ютери</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-2.svg" alt="">
-                                </span>
-                                <span>Смартфони, ТВ і електроніка</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-3.svg" alt="">
-                                </span>
-                                <span>Товари для геймерів</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-4.svg" alt="">
-                                </span>
-                                <span>Побутова техніка</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-5.svg" alt="">
-                                </span>
-                                <span>Товари для дому</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-6.svg" alt="">
-                                </span>
-                                <span>Інструменти та автотовари</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-7.svg" alt="">
-                                </span>
-                                <span>Сантехніка та ремонт</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-8.svg" alt="">
-                                </span>
-                                <span>Дача, сад і город</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-9.svg" alt="">
-                                </span>
-                                <span>Спорт і захоплення</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-10.svg" alt="">
-                                </span>
-                                <span>Одяг, взуття та прикраси</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-11.svg" alt="">
-                                </span>
-                                <span>Краса та здоров’я</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-13.svg" alt="">
-                                </span>
-                                <span>Дитячі товари</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-14.svg" alt="">
-                                </span>
-                                <span>Канцтовари та книги</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-15.svg" alt="">
-                                </span>
-                                <span>Алкогольні напої та продукти</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-16.svg" alt="">
-                                </span>
-                                <span>Товари для бізнесу</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-17.svg" alt="">
-                                </span>
-                                <span>Послуги та сервіси</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-18.svg" alt="">
-                                </span>
-                                <span>Тури та відпочинок</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-19.svg" alt="">
-                                </span>
-                                <span>Акції</span>
-                            </a>
-                        </li>
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-20.svg" alt="">
-                                </span>
-                                <span>Осінній розпродаж до -60%</span>
-                            </a>
-                        </li>
+
+                        <ul class="navbar__sublist user-dropdown">
+
+                          <li class="navbar__item ">
+                            <a class="navbar__link" href="#">Куда-то ссылка</a>
+                          </li>
+
+                        </ul>
+                      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </ul>
-                    <div class="ecommerce-divider"></div>
-                    <ul class="ecommerce-filter-list">
-                        <li class="ecommerce-filter-list-item">
-                            <a href="">
-                                <span class="ecommerce-filter-list-icon">
-                                    <img src="./assets/svg/shops/icon-21.svg" alt="">
-                                </span>
-                                <span>Довідковий центр</span>
-                            </a>
+                    <div class="navbar__more js-init is-initialized" data-navbar-more="" data-toggle=""
+                      data-user-config="{&quot;closeOnScroll&quot;:true}">
+                      <div class="navbar__more-trigger" data-toggle-trigger="">
+                        <span></span>
+                      </div>
+                      <div class="navbar__more-list" data-navbar-more-list="">
+                        <li class="navbar__item " data-navbar-item="">
+                          <a class="navbar__link" href="#">Посредники</a>
                         </li>
-                    </ul>
-                    <div class="ecommerce-welcome">
-                        <p class="ecommerce-welcome-title">Ласкаво просимо!</p>
-                        <p class="ecommerce-welcome-subtitle">Увійдіть, щоб отримувати рекомендації, персональні бонуси
-                            і знижки.</p>
-                        <a href=""
-                            class="button button__text button--default button--full-width button--bordered">Увійдіть в
-                            особистий кабінет</a>
+                        <li class="navbar__item " data-navbar-item="">
+                          <a class="navbar__link" href="#">Распродажи</a>
+                        </li>
+                        <li class="navbar__item " data-navbar-item="">
+                          <a class="navbar__link" href="#">Услуги</a>
+                        </li>
+                        <li class="navbar__item " data-navbar-item="">
+                          <a class="navbar__link" href="https://devstg.touchex.net/ru/news">Блог</a>
+                        </li>
+                        <li class="navbar__item " data-navbar-item="">
+                          <a class="navbar__link" href="https://devstg.touchex.net/ru/faq">FAQ</a>
+                        </li>
+                      </div>
                     </div>
-                    <div class="ecommerce-divider"></div>
-                    <div class="ecommerce-info">
-                        <p class="ecommerce-info-title">100USD</p>
-                        <p class="ecommerce-info-text">Увійдіть, щоб отримувати рекомендації, персональні бонуси і
-                            знижки.</p>
-                    </div>
-                    <div class="ecommerce-divider"></div>
-                    <div class="social-accounts">
-                        <p class="social-accounts-title">Соціальні засоби комунікації</p>
-                        <div class="grid _items-center">
-                            <a href="" class="button button--light button--bordered button--icon">
-                                <img src="./assets/svg/shops/instagram.svg" alt="">
-                            </a>
-                            <a href="" class="button button--light button--bordered button--icon">
-                                <img src="./assets/svg/shops/youtube.svg" alt="">
-                            </a>
-                            <a href="" class="button button--light button--bordered button--icon">
-                                <img src="./assets/svg/shops/facebook.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
+                  </nav>
                 </div>
-                <div class="ecommerce-products">
-                    <div class="ecommerce-banner">
-                        <div class="ecommerce-banner-grid">
-                            <div class="ecommerce-banner-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="" class="stretched-link"></a>
-                                        <!-- <img class="ecommerce-banner-swiper-img" src="./assets/svg/shops/banner.svg"
-                                            alt=""> -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="" class="stretched-link"></a>
-                                        <!-- <img class="ecommerce-banner-swiper-img" src="./assets/svg/shops/banner.svg"
-                                            alt=""> -->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="" class="stretched-link"></a>
-                                        <!-- <img class="ecommerce-banner-swiper-img" src="./assets/svg/shops/banner.svg"
-                                            alt=""> -->
-                                    </div>
-                                </div>
-                                <div class="ecommerce-banner-swiper-pagination"></div>
-                            </div>
-                            <div class="ecommerce-banner-right">
-                                <a href="" class="button button--default button--bordered">Здійснити покупку</a>
-                            </div>
-                        </div>
-                        <div class="grid _justify-end">
-                            <a href="" class="button--text ecommerce-btn-more">Всі акції 920</a>
-                        </div>
-                    </div>
-                    <div class="ecommerce-products-wrapper">
-                        <p class="ecommerce-products-title">Акційні пропозиції</p>
-                        <div class="ecommerce-products-grid">
-                            <div class="ecommerce-product">
-                                <input id="s" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="s" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-1.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Пральний порошок Persil автомат Колор</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-price">539 ₴</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ecommerce-product">
-                                <input id="d" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="d" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-2.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Пральний порошок Ariel Color 6 кг`</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-price">539 ₴</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ecommerce-product">
-                                <input id="a" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="a" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-3.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Засіб для миття посуду Frosch</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-price">539 ₴</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ecommerce-product">
-                                <input id="b" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="b" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-4.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Пральний порошок Persil автомат Колор</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-price text-decoration-line-through">539 ₴</p>
-                                        <p class="ecommerce-product-price-discounted">499 ₴</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid _justify-end">
-                            <a href="" class="button--text ecommerce-btn-more">Показати ще</a>
-                        </div>
-                    </div>
-                    <div class="ecommerce-products-wrapper">
-                        <p class="ecommerce-products-title">Найбільш очікувані</p>
-                        <div class="ecommerce-products-grid">
-                            <div class="ecommerce-product">
-                                <input id="s" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="s" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-5.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Мобільний телефон Apple iPhone 13 Pro</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-expected">Очікується</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ecommerce-product">
-                                <input id="d" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="d" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-6.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Мобільний телефон Apple iPhone 13 Pro</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-expected">Очікується</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ecommerce-product">
-                                <input id="a" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="a" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-7.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Смарт-годинник Apple Watch Series 7</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-expected">Очікується</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ecommerce-product">
-                                <input id="b" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="b" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-8.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Набір La Roche-Posay Effaclar для</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-expected">Очікується</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid _justify-end">
-                            <a href="" class="button--text ecommerce-btn-more">Показати ще</a>
-                        </div>
-                    </div>
-                    <div class="ecommerce-products-wrapper">
-                        <p class="ecommerce-products-title">Зараз користуються попитом</p>
-                        <div class="ecommerce-products-grid">
-                            <div class="ecommerce-product">
-                                <input id="s" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="s" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-9.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Фартух на трудове навчання Making на</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-price">539 ₴</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ecommerce-product">
-                                <input id="d" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="d" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-10.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Шкарпетки Conte Sof-Tiki Антиковзні</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-price">539 ₴</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ecommerce-product">
-                                <input id="a" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="a" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-11.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Мініатюра Нічна маска для обличчя</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-price">539 ₴</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ecommerce-product">
-                                <input id="b" type="checkbox" class="ecommerce-product-checkbox">
-                                <label for="b" class="ecommerce-product-like ecommerce-product-label">
-                                    <i class="far fa-heart"></i>
-                                    <i class="fas fa-heart"></i>
-                                </label>
-                                <a href="" class="stretched-link"></a>
-                                <div class="ecommerce-product-img">
-                                    <img src="./assets/svg/products/product-12.svg" alt="">
-                                </div>
-                                <div class="ecommerce-product-body">
-                                    <p class="ecommerce-product-name">Махрові шкарпетки Conte Sof-Tiki</p>
-                                    <div class="grid">
-                                        <p class="ecommerce-product-price text-decoration-line-through">539 ₴</p>
-                                        <p class="ecommerce-product-price-discounted">499 ₴</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid _justify-end">
-                            <a href="" class="button--text ecommerce-btn-more">Показати ще</a>
-                        </div>
-                    </div>
+                <div class="header__search">
+                  <div class="search">
+                    <form action="search.html" method="GET">
+                      <input type="search" name="query" class="search__input"
+                        placeholder="Поиск по сайту например iphone 12" required="" minlength="3">
+                      <div class="search__icon">
+                        <svg class="svg-icon svg-icon--loupe" width="22" height="22">
+                          <use xlink:href="/static/assets/svg/sprite.svg#loupe">
+                          </use>
+                        </svg>
+                      </div>
+                      <button type="submit" class="search__submit">Найти</button>
+                    </form>
+                  </div>
                 </div>
+              </div>
+              <div class="gcell _flex-noshrink">
+                <div class="grid _hspace-def _justify-between _items-center _mt-ms _mb-md">
+
+
+                  <div class="gcell">
+                    <div class="header__phone">
+                      <a class="link link--phone-lg" href="tel:++ 380 73 511 23 23">+ 380 73 511
+                        23 23</a>
+
+                    </div>
+                  </div>
+
+
+
+                  <div class="gcell">
+                    <div class="header__langs">
+                      <div class="langs">
+                        <ul class="langs__list">
+
+                          <li class="langs__item">
+                            <a class="langs__link" href="/ru/">ru</a>
+                          </li>
+
+                          <li class="langs__item">
+                            <a class="langs__link" href="/en/">en</a>
+                          </li>
+
+                          <li class="langs__item">
+                            <a class="langs__link" href="/ua/">ua</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid _hspace-def _justify-between _items-center">
+                  <div class="gcell">
+                    <div class="header__quick-order">
+
+
+                      <button class="button button--default button--bordered _ml-xs js-init is-initialized"
+                        type="button" data-mfp="ajax" data-mfp-src="/ru/dashboard/new-order/" data-ajax-type="get">
+                        <span class="button__text">Быстрый заказ</span>
+                      </button>
+
+
+                    </div>
+                  </div>
+                  <div class="gcell">
+                    <div class="header__auth">
+
+                      <a class="link link--icon-lg js-init is-initialized" data-mfp="ajax"
+                        data-mfp-src="/ru/account/login-mfp" data-ajax-type="get">
+
+
+                        <span class="link__text">Вход / Регистрация</span>
+
+                        <span class="link__icon link__icon--right">
+                          <svg class="svg-icon svg-icon--user" width="18" height="18">
+                            <use xlink:href="/static/assets/svg/sprite.svg#user">
+                            </use>
+                          </svg>
+                        </span>
+
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+    <div class="header header--mobile">
+      <div class="container container--hd">
+        <div class="grid _flex-nowrap _hspace-sm _justify-between">
+          <div class="gcell">
+            <a class="logo logo--mobile" href="index.html" title="На главную">
+              <div class="logo__image">
+                <!-- <svg class="svg-icon svg-icon--logo" width="312" height="72">
+                                    <use xlink:href="/static/assets/svg/sprite.svg#logo"></use>
+                                </svg> -->
+                <div class="logo__image">
+                  <img src="https://devstg.touchex.net/media/logo/1627992943_3324144_touchex_logo.png" width="312">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gcell">
+            <div class="grid _hspace-xxs _items-center">
+              <div class="gcell">
+                <div class="header__quick-order">
+                  <a class="link js-init is-initialized" data-mfp="ajax" data-mfp-src="/ru/dashboard/new-order/"
+                    data-ajax-type="get">
 
-    <!----------------------------------Main----------------------------------- -->
 
-    <script src="./js/min/jquery.nice-select.min.js"></script>
-    <script src="./js/min/swiper-bundle.min.js"></script>
-    <script src="./js/min/bootstrap-bundle.min.js"></script>
-    <script src="./js/ecommerce-index.js"></script>
+
+                    <span class="link__icon link__icon--right">
+                      <svg class="svg-icon svg-icon--cart" width="18" height="18">
+                        <use xlink:href="/static/assets/svg/sprite.svg#cart"></use>
+                      </svg>
+                    </span>
+
+                  </a>
+                </div>
+              </div>
+              <div class="gcell">
+                <div class="header__auth">
+                  <a class="link js-init is-initialized" data-mfp="ajax" data-mfp-src="/ru/account/login-mfp"
+                    data-ajax-type="get">
+
+
+
+                    <span class="link__icon link__icon--right">
+                      <svg class="svg-icon svg-icon--user" width="18" height="18">
+                        <use xlink:href="/static/assets/svg/sprite.svg#user"></use>
+                      </svg>
+                    </span>
+
+                  </a>
+                </div>
+              </div>
+              <div class="gcell">
+                <div class="header__burger">
+                  <a class="link js-init is-initialized" data-mfp="inline" data-mfp-src="#popup-mobile">
+
+
+
+                    <span class="link__icon link__icon--right">
+                      <svg class="svg-icon svg-icon--burger" width="18" height="18">
+                        <use xlink:href="/static/assets/svg/sprite.svg#burger"></use>
+                      </svg>
+                    </span>
+
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-section">
+    <div class="container container--hd">
+      <div class="shops-swiper-wrapper">
+        <button class="shops-swiper-navigation-btn __left" id="shops-swiper-navigation-left">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="shops-swiper-navigation-btn __right" id="shops-swiper-navigation-right">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="shops-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-1.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-3.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-2.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-3.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-4.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-5.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-6.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-4.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-5.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-6.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-4.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-5.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-6.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-3.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-4.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-5.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shops-card">
+                <a class="stretched-link" href=""></a>
+                <img src="./assets/svg/shops/shop-6.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-grid">
+        <div class="ecommerce-sidebar">
+          <div class="filter-header">
+            <div class="grid _items-center">
+              <button class="button" id="close-filter">
+                <i class="fas fa-arrow-left"></i>
+              </button>
+              <p class="filter-header-title _m-none _flex-grow _text-center">Фільтр</p>
+            </div>
+          </div>
+          <div class="padding-container">
+            <ul class="ecommerce-filter-list">
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-1.svg" alt="">
+                  </span>
+                  <span>Ноутбуки та комп’ютери</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-2.svg" alt="">
+                  </span>
+                  <span>Смартфони, ТВ і електроніка</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-3.svg" alt="">
+                  </span>
+                  <span>Товари для геймерів</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-4.svg" alt="">
+                  </span>
+                  <span>Побутова техніка</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-5.svg" alt="">
+                  </span>
+                  <span>Товари для дому</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-6.svg" alt="">
+                  </span>
+                  <span>Інструменти та автотовари</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-7.svg" alt="">
+                  </span>
+                  <span>Сантехніка та ремонт</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-8.svg" alt="">
+                  </span>
+                  <span>Дача, сад і город</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-9.svg" alt="">
+                  </span>
+                  <span>Спорт і захоплення</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-10.svg" alt="">
+                  </span>
+                  <span>Одяг, взуття та прикраси</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-11.svg" alt="">
+                  </span>
+                  <span>Краса та здоров’я</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-13.svg" alt="">
+                  </span>
+                  <span>Дитячі товари</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-14.svg" alt="">
+                  </span>
+                  <span>Канцтовари та книги</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-15.svg" alt="">
+                  </span>
+                  <span>Алкогольні напої та продукти</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-16.svg" alt="">
+                  </span>
+                  <span>Товари для бізнесу</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-17.svg" alt="">
+                  </span>
+                  <span>Послуги та сервіси</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-18.svg" alt="">
+                  </span>
+                  <span>Тури та відпочинок</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-19.svg" alt="">
+                  </span>
+                  <span>Акції</span>
+                </a>
+              </li>
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-20.svg" alt="">
+                  </span>
+                  <span>Осінній розпродаж до -60%</span>
+                </a>
+              </li>
+            </ul>
+            <div class="ecommerce-divider"></div>
+            <ul class="ecommerce-filter-list">
+              <li class="ecommerce-filter-list-item">
+                <a href="">
+                  <span class="ecommerce-filter-list-icon">
+                    <img src="./assets/svg/shops/icon-21.svg" alt="">
+                  </span>
+                  <span>Довідковий центр</span>
+                </a>
+              </li>
+            </ul>
+            <div class="ecommerce-welcome">
+              <p class="ecommerce-welcome-title">Ласкаво просимо!</p>
+              <p class="ecommerce-welcome-subtitle">Увійдіть, щоб отримувати рекомендації, персональні
+                бонуси
+                і знижки.</p>
+              <a href="" class="button button__text button--default button--full-width button--bordered">Увійдіть
+                в
+                особистий кабінет</a>
+            </div>
+            <div class="ecommerce-divider"></div>
+            <div class="ecommerce-info">
+              <p class="ecommerce-info-title">100USD</p>
+              <p class="ecommerce-info-text">Увійдіть, щоб отримувати рекомендації, персональні бонуси і
+                знижки.</p>
+            </div>
+            <div class="ecommerce-divider"></div>
+            <div class="social-accounts">
+              <p class="social-accounts-title">Соціальні засоби комунікації</p>
+              <div class="grid _items-center">
+                <a href="" class="button button--light button--bordered button--icon">
+                  <img src="./assets/svg/shops/instagram.svg" alt="">
+                </a>
+                <a href="" class="button button--light button--bordered button--icon">
+                  <img src="./assets/svg/shops/youtube.svg" alt="">
+                </a>
+                <a href="" class="button button--light button--bordered button--icon">
+                  <img src="./assets/svg/shops/facebook.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ecommerce-products">
+          <div class="ecommerce-banner">
+            <div class="ecommerce-banner-grid">
+              <div class="ecommerce-banner-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="" class="stretched-link"></a>
+                    <!-- <img class="ecommerce-banner-swiper-img" src="./assets/svg/shops/banner.svg"
+                                            alt=""> -->
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="stretched-link"></a>
+                    <!-- <img class="ecommerce-banner-swiper-img" src="./assets/svg/shops/banner.svg"
+                                            alt=""> -->
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="stretched-link"></a>
+                    <!-- <img class="ecommerce-banner-swiper-img" src="./assets/svg/shops/banner.svg"
+                                            alt=""> -->
+                  </div>
+                </div>
+                <div class="ecommerce-banner-swiper-pagination"></div>
+              </div>
+              <div class="ecommerce-banner-right">
+                <a href="" class="button button--default button--bordered">Здійснити покупку</a>
+              </div>
+            </div>
+            <div class="grid _justify-between">
+              <button class="button button--text ecommerce-btn-more" id="open-filter"
+                data-target="#ecommerce-sidebar">Фільтр</button>
+              <a href="" class="button--text ecommerce-btn-more">Всі акції 920</a>
+            </div>
+          </div>
+          <div class="ecommerce-products-wrapper">
+            <p class="ecommerce-products-title">Акційні пропозиції</p>
+            <div class="ecommerce-products-grid">
+              <div class="ecommerce-product">
+                <input id="s" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="s" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-1.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Пральний порошок Persil автомат Колор</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-price">539 ₴</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ecommerce-product">
+                <input id="d" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="d" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-2.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Пральний порошок Ariel Color 6 кг`</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-price">539 ₴</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ecommerce-product">
+                <input id="a" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="a" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-3.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Засіб для миття посуду Frosch</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-price">539 ₴</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ecommerce-product">
+                <input id="b" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="b" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-4.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Пральний порошок Persil автомат Колор</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-price text-decoration-line-through">539 ₴</p>
+                    <p class="ecommerce-product-price-discounted">499 ₴</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid _justify-end">
+              <a href="" class="button--text ecommerce-btn-more">Показати ще</a>
+            </div>
+          </div>
+          <div class="ecommerce-products-wrapper">
+            <p class="ecommerce-products-title">Найбільш очікувані</p>
+            <div class="ecommerce-products-grid">
+              <div class="ecommerce-product">
+                <input id="s" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="s" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-5.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Мобільний телефон Apple iPhone 13 Pro</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-expected">Очікується</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ecommerce-product">
+                <input id="d" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="d" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-6.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Мобільний телефон Apple iPhone 13 Pro</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-expected">Очікується</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ecommerce-product">
+                <input id="a" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="a" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-7.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Смарт-годинник Apple Watch Series 7</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-expected">Очікується</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ecommerce-product">
+                <input id="b" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="b" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-8.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Набір La Roche-Posay Effaclar для</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-expected">Очікується</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid _justify-end">
+              <a href="" class="button--text ecommerce-btn-more">Показати ще</a>
+            </div>
+          </div>
+          <div class="ecommerce-products-wrapper">
+            <p class="ecommerce-products-title">Зараз користуються попитом</p>
+            <div class="ecommerce-products-grid">
+              <div class="ecommerce-product">
+                <input id="s" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="s" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-9.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Фартух на трудове навчання Making на</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-price">539 ₴</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ecommerce-product">
+                <input id="d" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="d" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-10.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Шкарпетки Conte Sof-Tiki Антиковзні</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-price">539 ₴</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ecommerce-product">
+                <input id="a" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="a" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-11.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Мініатюра Нічна маска для обличчя</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-price">539 ₴</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ecommerce-product">
+                <input id="b" type="checkbox" class="ecommerce-product-checkbox">
+                <label for="b" class="ecommerce-product-like ecommerce-product-label">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-heart"></i>
+                </label>
+                <a href="" class="stretched-link"></a>
+                <div class="ecommerce-product-img">
+                  <img src="./assets/svg/products/product-12.svg" alt="">
+                </div>
+                <div class="ecommerce-product-body">
+                  <p class="ecommerce-product-name">Махрові шкарпетки Conte Sof-Tiki</p>
+                  <div class="grid">
+                    <p class="ecommerce-product-price text-decoration-line-through">539 ₴</p>
+                    <p class="ecommerce-product-price-discounted">499 ₴</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid _justify-end">
+              <a href="" class="button--text ecommerce-btn-more">Показати ще</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------------------------------Main----------------------------------- -->
+
+  <div class="layout__footer">
+    <div class="footer">
+      <img class="footer__decor" src="/static/images/decor/2.png">
+      <div class="container container--hd">
+        <div class="_mb-xl">
+          <div class="grid _hspace-mg _justify-center _def-justify-start">
+            <div class="gcell gcell--12 gcell--sm-8 gcell--def-4">
+              <div class="text _mb-ms">© 2021 Touchex express</div>
+              <div class="text _mb-ms">Самые популярные бренды и предложения интернет-магазинов,
+                качественные товары, эксклюзивные вещи</div>
+              <div class="grid _hspace-xs _justify-center _def-justify-start _mb-ms">
+
+
+                <div class="gcell">
+                  <a class="link link--icon-lg" href="hhttps://www.instagram.com/" target="_blank"
+                    rel="noopener noreferrer">
+
+
+                    <span class="link__icon link__icon--left">
+                      <img src="/media/icons/social/instagram.svg" width="40">
+                    </span>
+
+
+                  </a>
+                </div>
+
+
+
+                <div class="gcell">
+                  <a class="link link--icon-lg" href="hhttps://www.youtube.com" target="_blank"
+                    rel="noopener noreferrer">
+
+
+                    <span class="link__icon link__icon--left">
+                      <img src="/media/icons/social/youtube.svg" width="40">
+                    </span>
+
+
+                  </a>
+                </div>
+
+
+
+                <div class="gcell">
+                  <a class="link link--icon-lg" href="hhttps://www.facebook.com" target="_blank"
+                    rel="noopener noreferrer">
+
+
+                    <span class="link__icon link__icon--left">
+                      <img src="/media/icons/social/facebook.svg" width="40">
+                    </span>
+
+
+                  </a>
+                </div>
+
+
+              </div>
+              <div class="grid _hspace-md _justify-center _def-justify-start _mb-xs">
+
+                <div class="gcell">
+                  <a class="link link--phone-lg" href="tel:++ 380 73 511 23 23">+ 380 73 511 23 23</a>
+                </div>
+
+
+                <div class="gcell">
+                  <a class="link link--phone-lg" href="tel:++ 380 99 611 32 32">+ 380 99 611 32 32</a>
+                </div>
+
+              </div>
+              <div class="_mb-ms">
+                <a class="link link--email" href="mailto:scsdelivery-info@com">
+
+
+                  <span class="link__text">scsdelivery-info@com</span>
+
+
+                </a>
+              </div>
+              <div class="-payment-engines-">
+                <img src="/static/temp/wayforpay.png" alt="Wayforpay - payment engine">
+              </div>
+            </div>
+            <div class="gcell gcell--8 _def-show">
+              <div class="grid _hspace-xxl">
+                <div class="gcell gcell--4">
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="https://devstg.touchex.net/ru/shops/">
+                      <span class="link__text">Каталог магазинов</span>
+                    </a>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="#">
+                      <span class="link__text">Посредники</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="#">
+                      <span class="link__text">Распродажи</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="#">
+                      <span class="link__text">Инфо</span>
+                    </a>
+                  </div>
+
+
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="#">
+                      <span class="link__text">Услуги</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="https://devstg.touchex.net/ru/news">
+                      <span class="link__text">Блог</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="https://devstg.touchex.net/ru/faq">
+                      <span class="link__text">FAQ</span>
+                    </a>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="gcell gcell--4">
+
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="https://devstg.touchex.net/ru/shops/">
+                      <span class="link__text">Все</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate"
+                      href="https://devstg.touchex.net/ru/shops/?country=&amp;category=electronics_and_tech">
+                      <span class="link__text">Техника и электроника</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate"
+                      href="https://devstg.touchex.net/ru/shops/?country=&amp;category=clothes_and_footwear">
+                      <span class="link__text">Одежда и обувь</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate"
+                      href="https://devstg.touchex.net/ru/shops/?country=&amp;category=cosmetics_and_hygiene">
+                      <span class="link__text">Косметика и гигиена</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate"
+                      href="https://devstg.touchex.net/ru/shops/?country=&amp;category=casual_wear">
+                      <span class="link__text">Повседневная одежда</span>
+                    </a>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate"
+                      href="https://devstg.touchex.net/ru/shops/?country=&amp;category=footwear">
+                      <span class="link__text">Сапоги и туфли</span>
+                    </a>
+                  </div>
+
+
+                </div>
+                <div class="gcell gcell--4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="https://www.amazon.com/">
+                      <span class="link__text">Amazon</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="https://www.ebay.com/">
+                      <span class="link__text">ebay</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="https://www.6pm.com/">
+                      <span class="link__text">6pm</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="https://www.levi.com/global">
+                      <span class="link__text">Levis</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="https://www.walmart.com/">
+                      <span class="link__text">Walmart</span>
+                    </a>
+                  </div>
+
+
+
+                  <div class="_mb-ms">
+                    <a class="link link--bold link--truncate" href="https://www.zara.com/">
+                      <span class="link__text">Zara</span>
+                    </a>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid _hspace-mg _justify-center _def-justify-start">
+          <div class="gcell gcell--12 gcell--sm-8 gcell--def-4">
+            <!-- <a class="link link--developer" href="https://wezom.com.ua/" target="_blank"
+                            rel="noopener noreferrer">
+
+
+                            <span class="link__icon link__icon--left">
+                                <svg class="svg-icon svg-icon--wezom" width="24" height="10">
+                                    <use xlink:href="/static/assets/svg/sprite.svg#wezom"></use>
+                                </svg>
+                            </span>
+                            <span class="link__text">Created by Wezom</span>
+
+
+                        </a> -->
+            <div class="_def-hide _mt-sm">
+              <a class="link link--muted" href="sitemap.html">
+
+
+                <span class="link__text">Карта сайта</span>
+
+
+              </a>
+            </div>
+          </div>
+          <div class="gcell gcell--8 _def-show">
+            <div class="grid _hspace-xxl">
+              <div class="gcell gcell--4">
+                <a class="link link--muted" href="sitemap.html">
+
+
+                  <span class="link__text">Карта сайта</span>
+
+
+                </a>
+              </div>
+              <div class="gcell gcell--4">
+                <a class="link link--muted" href="catalog.html">
+
+
+                  <span class="link__text">Все категории</span>
+
+
+                </a>
+              </div>
+              <div class="gcell gcell--4">
+                <a class="link link--muted" href="catalog.html">
+
+
+                  <span class="link__text">Все магазины</span>
+
+
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/min/jquery.nice-select.min.js"></script>
+  <script src="./js/min/swiper-bundle.min.js"></script>
+  <script src="./js/min/bootstrap-bundle.min.js"></script>
+  <script src="./js/ecommerce-index.js"></script>
 
 </body>
 

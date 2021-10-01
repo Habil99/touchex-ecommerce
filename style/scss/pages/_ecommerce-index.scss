@@ -124,9 +124,89 @@
     grid-template-columns: 350px 1fr;
     grid-column-gap: 30px;
   }
+
+  @media screen and (max-width: 1360px) {
+    grid-template-columns: 280px 1fr;
+  }
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
 }
 
-.ecommerce-sidebar {
+@media screen and (max-width: 1200px) {
+  .ecommerce-sidebar {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    width: 1px !important;
+    margin: -1px;
+    padding: 0 !important;
+    border: none !important;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.9);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+
+    &.show {
+      position: fixed !important;
+      clip: auto !important;
+      height: auto !important;
+      z-index: 4 !important;
+      background-color: #fff;
+      width: 100% !important;
+      top: 0;
+      overflow-y: auto !important;
+      right: 0 !important;
+      left: 0 !important;
+      bottom: 0 !important;
+      margin-right: 0 !important;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .padding-container {
+    padding: 0 50px 50px;
+    overflow-y: auto;
+    flex: 1;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .filter-header {
+    display: block !important;
+    padding: 10px 20px;
+    background: #ffffff;
+    box-shadow: 0px 5px 12px rgba(255, 190, 114, 0.15);
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+
+    .button {
+      color: #ff7800;
+      font-size: 18px;
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 18px;
+      color: #606060;
+    }
+  }
+}
+
+.filter-header {
+  display: none;
 }
 
 .ecommerce-filter-list {
@@ -136,6 +216,10 @@
 
   @media screen and (max-width: 1920px) {
     margin-right: 20px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin-top: 80px;
   }
 
   &-item {
@@ -270,13 +354,17 @@
     grid-template-columns: 1fr 220px;
   }
 
+  @media screen and (max-width: 1360px) {
+    grid-template-columns: 1fr 180px;
+  }
+
   .ecommerce-banner-right {
     background-color: white;
     background-image: url("../../../assets/svg/shops/banner-2.svg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 450px;
     position: relative;
 
     .button {
@@ -331,7 +419,7 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 450px;
 
     @media screen and (min-width: 1920px) {
       height: 560px;
@@ -360,6 +448,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 20px;
+
+  @media screen and (max-width: 1550px) {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
 }
 
 .ecommerce-product {
