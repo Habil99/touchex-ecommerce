@@ -1796,6 +1796,12 @@ body {
   padding-left: 0;
 }
 
+@media screen and (max-width: 1920px) {
+  .ecommerce-filter-list {
+    margin-right: 20px;
+  }
+}
+
 .ecommerce-filter-list-item {
   margin-bottom: 10px;
 }

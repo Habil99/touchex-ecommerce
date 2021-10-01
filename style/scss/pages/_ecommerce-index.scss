@@ -134,6 +134,10 @@
   margin-right: 60px;
   padding-left: 0;
 
+  @media screen and (max-width: 1920px) {
+    margin-right: 20px;
+  }
+
   &-item {
     margin-bottom: 10px;
 
